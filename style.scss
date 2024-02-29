@@ -118,6 +118,9 @@ img{
       margin-top: 15px;
       display: grid;
       grid-template-columns: repeat(4,1fr);
+      .card_visa:hover{
+        filter: drop-shadow(5px 5px 5px black);
+      }
       .card_visa{
           position: relative;
           width: 282px;
