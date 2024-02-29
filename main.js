@@ -1,5 +1,4 @@
 import { createHeader, reload } from "./modules/ui"
-
 let body = document.querySelector('.header')
 let rel = document.querySelector('.reload')
 
@@ -28,3 +27,5 @@ let array = [
 
 createHeader(body)
 reload(array, rel)
+let name = document.querySelector('.name')
+name.innerHTML = localStorage.getItem('name')
