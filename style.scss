@@ -4,11 +4,6 @@
   box-sizing: border-box;
   font-family: Gilroy;
 }
-
-// html {
-//   height: 100%;
-// }
-
 img {
   max-width: 100%;
 }
@@ -172,6 +167,9 @@ header{
   }
   
   .box_l {
+    a{
+      text-decoration: none;
+    }
       display: flex;
       gap: 30px;
   }
