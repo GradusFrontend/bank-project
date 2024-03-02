@@ -20,7 +20,7 @@ form.onsubmit = (e) => {
                 if(res.status === 200 || res.status === 201){
                     location.assign('../enter/')
                     localStorage.setItem('name', res.data.name)
-                    localStorage.setItem('suname', res.data.surname)
+                    localStorage.setItem('surname', res.data.surname)
                     localStorage.setItem('email', res.data.email)
                     localStorage.setItem('password', res.data.password)
                 }
