@@ -73,7 +73,11 @@ export function createHeader() {
     glavnaya.innerHTML = 'Главная'
     koshelek.innerHTML = 'Мои кошельки'
     akcii.innerHTML = "Мои транзакции"
-    email.innerHTML = localStorage.getItem('email')
+    if(localStorage.getItem('email') !== ''){
+        email.innerHTML = localStorage.getItem('email')
+    } else {
+        email.innerHTML = 'alexadams@google.com'
+    }
     icon.src = "../../public/log-out (1) 1.png"
 
     icon.onclick = () => {
