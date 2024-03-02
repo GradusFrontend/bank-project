@@ -75,6 +75,7 @@ export function createHeader() {
     akcii.innerHTML = "Мои транзакции"
     if(localStorage.getItem('email') !== ''){
         email.innerHTML = localStorage.getItem('email')
+        return
     } else {
         email.innerHTML = 'alexadams@goagle.com'
     }
