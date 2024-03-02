@@ -27,7 +27,6 @@ form.onsubmit = (e) => {
                             location.assign('/pages/signin/')
                         }
                     })
-
             })
     }
 }
