@@ -50,7 +50,6 @@ export function createHeader() {
     let email = document.createElement('a')
     let icon = document.createElement('img')
 
-    email.classList.add("user_mail")
     box.classList.add('box')
     box_l.classList.add('box_l')
     box_r.classList.add('box_r')
