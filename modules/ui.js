@@ -76,7 +76,7 @@ export function createHeader() {
     if(localStorage.getItem('email') !== ''){
         email.innerHTML = localStorage.getItem('email')
     } else {
-        email.innerHTML = 'alexadams@google.com'
+        email.innerHTML = 'alexadams@goagle.com'
     }
     icon.src = "../../public/log-out (1) 1.png"
 
