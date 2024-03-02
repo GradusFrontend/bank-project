@@ -73,7 +73,7 @@ export function createHeader() {
     glavnaya.innerHTML = 'Главная'
     koshelek.innerHTML = 'Мои кошельки'
     akcii.innerHTML = "Мои транзакции"
-    email.innerHTML = 'alexadams@google.com'
+    email.innerHTML = localStorage.getItem('email')
     icon.src = "../../public/log-out (1) 1.png"
 
     icon.onclick = () => {
