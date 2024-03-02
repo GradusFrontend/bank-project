@@ -14,8 +14,8 @@
     </div>
     <section class="first">
         <div class="wrap">
-            <h1>Добро пожаловать, Alex Adams!</h1>
-            <p class="email">alexadams@google.com</p>
+            <h1>Добро пожаловать,</h1> <div class="hh"><h2 id="h"></h5></div>
+            <p id="em" class="email">alexadams@google.com</p>
             <div class="cards">
                 <h2>Мои кошельки</h2>
                 <div class="reload">
@@ -50,6 +50,101 @@
     </div>
 
     <script type="module" src="/main.js"></script>
-   
+   <script>
+//     document.addEventListener("DOMContentLoaded", function() {
+//     // Получить имя пользователя из локального хранилища
+// var username = localStorage.getItem('name');
+
+// // Отобразить имя пользователя на сайте
+// let h = document.querySelector('h1')
+// h.textContent = username
+//     })
+// document.addEventListener("DOMContentLoaded", function() {
+    // var username = localStorage.getItem('username');
+//     // Используйте querySelector для поиска элемента user внутри элемента users
+//     var userElement = document.querySelector('#users .user');
+//     if (userElement) {
+//         // Если элемент найден, установите текстовое содержимое
+//         userElement.textContent = username;
+//     } else {
+//         // Обработайте случай, если элемент не найден
+//         console.error('Элемент user не найден внутри элемента users.');
+//     }
+// });
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Получить массив пользователей из локального хранилища
+//     var users = JSON.parse(localStorage.getItem('users'));
+
+//     // Проверить, есть ли массив пользователей и не пуст ли он
+//     if (Array.isArray(users) && users.length > 0) {
+//         // Получить первого пользователя из массива (или любого другого по индексу)
+//         var user = users[0]; // Например, первый пользователь из массива
+
+//         // Отобразить имя пользователя на сайте
+//         var username = user.name;
+//         document.getElementById('.h').textContent = username;
+//     } else {
+//         // Если массив пользователей пуст или отсутствует, вывести сообщение об ошибке
+//         console.error('Массив пользователей пуст или отсутствует в локальном хранилище.');
+//     }
+// });
+// document.addEventListener("DOMContentLoaded", function() {
+    // Получить массив пользователей из локального хранилища
+    // var users = JSON.parse(localStorage.getItem('users'));
+
+    // Проверить, был ли массив пользователей успешно получен
+    // if (Array.isArray(users) && users.length > 0) {
+        // Получить последнего пользователя из массива
+        // var lastUser = users[users.length - 1];
+
+//         // Получить имя пользователя из объекта пользователя
+//         var username = lastUser.name;
+
+//         // Отобразить имя пользователя на сайте
+//         document.getElementById('.h').textContent = username;
+//     } else {
+//         // Если массив пользователей пуст или отсутствует, вывести сообщение об ошибке
+//         console.error('Массив пользователей пуст или отсутствует в локальном хранилище.');
+//     }
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('db.json')
+        .then(response => response.json())
+        .then(data => {
+            var users = data.users;
+            if (Array.isArray(users) && users.length > 0) {
+                var usser = users[users.length - 1];
+                var username = usser.name;
+                document.getElementById('h').textContent = username;
+            } else {
+                console.error('ошибка');
+            }
+        })
+        .catch(error => console.error('Ошибка:', error));
+});
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('db.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Ошибка загрузки данных с сервера');
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (Array.isArray(data.users) && data.users.length > 0) {
+                var emailuser = data.users[data.users.length - 1];
+                var Email = emailuser.email;
+                document.getElementById('em').textContent = Email;
+            } else {
+                console.error('ошибка');
+            }
+        })
+        .catch(error => {
+            console.error('Ошибка', error);
+        });
+});
+</script>
+
 </body>
 </html>

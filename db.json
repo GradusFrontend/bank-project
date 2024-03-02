@@ -6,6 +6,27 @@
       "name": "Daler",
       "surname": "Sharifkulov",
       "password": "1234"
+    },
+    {
+      "id": "9999",
+      "email": "a@gmail.com",
+      "name": "a",
+      "surname": "a",
+      "password": "a"
+    },
+    {
+      "id": "05f3",
+      "email": "aa@gmail.com",
+      "name": "aa",
+      "surname": "aa",
+      "password": "aa"
+    },
+    {
+      "id": "fd48",
+      "email": "q@gmail.com",
+      "name": "q",
+      "surname": "q",
+      "password": "q"
     }
   ]
 }
