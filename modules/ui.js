@@ -50,6 +50,7 @@ export function createHeader() {
     let email = document.createElement('a')
     let icon = document.createElement('img')
 
+    email.classList.add("user_mail")
     box.classList.add('box')
     box_l.classList.add('box_l')
     box_r.classList.add('box_r')
@@ -85,4 +86,18 @@ export function createHeader() {
     }
 
     return header
+}
+
+
+export function toaster(text) {
+    const custom_alert = document.createElement('div')
+
+        custom_alert.classList.add('error')
+        custom_alert.innerHTML = text
+
+        document.body.append(custom_alert)
+
+        setTimeout(() => {
+            custom_alert.remove()
+        }, 3000)
 }
