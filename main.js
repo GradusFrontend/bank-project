@@ -28,4 +28,10 @@ let array = [
 createHeader(body)
 reload(array, rel)
 let name = document.querySelector('.name')
-name.innerHTML = localStorage.getItem('name')
+let emails = document.querySelectorAll('.email')
+if(localStorage.length !== 0){
+    name.innerHTML = localStorage.getItem('name') + ' ' + localStorage.getItem('surname')
+    emails.forEach(email => {
+        email.innerHTML = localStorage.getItem('email')
+    })
+}

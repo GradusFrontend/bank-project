@@ -1,27 +1,25 @@
-let email = localStorage.getItem('email')
-let password = localStorage.getItem('password')
-let form_2 = document.forms.enter
-let a = document.querySelector('.main')
-const link = 'http://localhost:8080/'
-form_2.onsubmit = (e) => {
+import { postData, getData } from "../../modules/http"
+import { toaster } from "../../modules/ui"
+const form = document.forms.namedItem('enter')
+form.onsubmit = (e) => {
     e.preventDefault()
-    let checking = {
-        email: new FormData(form_2).get('email'),
-        password: new FormData(form_2).get('password')
+    let user = {}
+    const fm = new FormData(e.target)
+    fm.forEach((val, key) => user[key] = val)
+    const {email, password} = user
+    if(email && password ){
+        getData('/users?email=' + email)
+        .then(res => {
+            const [res_user] = res.data
+            if(!res_user){
+                toaster('Cannot find this account')
+                return
+            }
+            if(res_user.password !== password){
+                toaster('Uncorrect password')
+                return
+            }
+            location.assign('/')
+        })
     }
-    fetch(link + 'users')
-.then(res => res.json())
-.then(res => { 
-    res.find(item => {
-        if(item.email === checking.email && item.password === checking.password){
-           window.location.assign('/')
-        } else if( item.password !== checking.password) {
-            alert('Check your password')
-        } else if(item.email !== checking.email){
-            alert('Check your email')
-         } else if (item.email !== checking.email && item.password !== checking.password) {
-            alert('Cannot find your account')
-         }
-    })
-})
 }

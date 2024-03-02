@@ -40,3 +40,21 @@ a{
     color: #0047FF;
     text-decoration: none;
 }
+.error{
+    position: absolute;
+    right: 3456px;
+    background-color: rgb(222, 64, 64);
+    border-radius: 12px;
+    padding: 5px 10px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.active_error{
+    margin: 0 50px ;
+    position: absolute;
+    width: 170px;
+    top: 0;
+    left: 0;
+    color: #fff;
+    transition: 0.5s ease;
+}

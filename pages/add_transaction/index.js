@@ -23,3 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(`Транзакция успешно добавлена:\n${JSON.stringify(user, null, 2)}`);
     }
 })
+let emails = document.querySelectorAll('.email')
+emails.forEach(email => {
+    email.innerHTML = localStorage.getItem('email')
+})

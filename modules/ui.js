@@ -58,7 +58,7 @@ export function createHeader() {
     koshelek.classList.add('koshelek')
     akcii.classList.add('akcii')
     icon.classList.add('icon')
-
+    email.classList.add('email')
     document.body.prepend(header)
     header.append(box)
     box.append(box_l, box_r)
@@ -85,4 +85,15 @@ export function createHeader() {
     }
 
     return header
+}
+
+export function toaster(text) {
+    let show_mistake = document.createElement('div')
+            show_mistake.classList.add('error')
+            show_mistake.innerHTML = text
+            show_mistake.classList.add('active_error')
+            document.body.append(show_mistake)
+            setTimeout(() => {
+                show_mistake.remove()
+            }, 3000)
 }

@@ -24,4 +24,7 @@ form.onsubmit = (e) => {
     localStorage.setItem("user", JSON.stringify(user))
     console.log(user);
 }
-
+let emails = document.querySelectorAll('.email')
+emails.forEach(email => {
+    email.innerHTML = localStorage.getItem('email')
+})
