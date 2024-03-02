@@ -25,6 +25,18 @@ let array = [
         background: 'linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%)'
     }
 ]
-
 createHeader(body)
 reload(array, rel)
+
+const userName = {
+    Name: document.querySelector('.surname'),
+    Surname: document.querySelector('.name1'),
+    Email: document.querySelector('.email')
+}
+
+let user = JSON.parse(localStorage.getItem("userName"))
+
+userName.Name.innerHTML = user.name
+userName.Surname.innerHTML = user.surname
+userName.Email.innerHTML = user.email
+

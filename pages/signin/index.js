@@ -26,6 +26,7 @@ form.onsubmit = (e) => {
                     toaster('Не верный пароль!')    
                     return
                 }
+                localStorage.setItem("userName", JSON.stringify(res_user))
                 
                 location.assign('/')
             })

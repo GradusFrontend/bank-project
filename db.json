@@ -6,6 +6,13 @@
       "name": "Daler",
       "surname": "Sharifkulov",
       "password": "1234"
+    },
+    {
+      "id": "aa5a",
+      "email": "azizabonusaliyeva@gmail.com",
+      "name": "aziza",
+      "surname": "saliyeva",
+      "password": "12345678"
     }
   ]
 }
