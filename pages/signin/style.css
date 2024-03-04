@@ -5,8 +5,10 @@
     font-family: Gilroy;
 }
 
-img {
-    max-width: 100%;
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0047FF;
 }
 
 .wrap {

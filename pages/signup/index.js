@@ -1,6 +1,6 @@
 import axios from 'axios'
-import { getData, postData } from '../../modules/http'
-import { toaster } from '../../modules/ui'
+import { getData, postData } from '../../modules/http.js'
+import { toaster } from '../../modules/ui.js'
 const form = document.forms.namedItem('signup')
 
 form.onsubmit = (e) => {

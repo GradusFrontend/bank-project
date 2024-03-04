@@ -1,5 +1,5 @@
-import { getData, postData } from '../../modules/http'
-import { toaster } from '../../modules/ui'
+import { getData, postData } from '../../modules/http.js'
+import { toaster } from '../../modules/ui.js'
 
 const form = document.forms.namedItem('signin')
 
@@ -28,8 +28,9 @@ form.onsubmit = (e) => {
                     return
                 }
                 
-                localStorage.setItem("aboutuser", JSON.stringify(res_user))
-                
+                delete res_user.password
+
+                localStorage.setItem("user", JSON.stringify(res_user))
                 location.assign('/')
             })
         }

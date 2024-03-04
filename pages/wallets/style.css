@@ -10,7 +10,7 @@
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
     margin: 20px auto;
 }
 
@@ -73,22 +73,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.ex {
-    width: 282px;
-    height: 160px;
-    border-radius: 10px;
-    background-color: aquamarine;
-}
-
-.cont {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-    padding-top: 44px;
 }
 
 .all {

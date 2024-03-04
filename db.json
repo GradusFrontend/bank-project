@@ -20,6 +20,79 @@
       "name": "Furkat",
       "surname": "Usupov",
       "password": "123"
+    },
+    {
+      "id": "4254",
+      "email": "abdullaevadil2007@gmail.com",
+      "name": "dilrukh",
+      "surname": "abdullaeva",
+      "password": "1234"
     }
-  ]
+  ],
+  "wallets": [
+    {
+      "id": "0.4400490557438985",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "d6fe",
+      "name": "Daler",
+      "currency": "USD",
+      "balance": "1234"
+    },
+    {
+      "id": "0.42344722339894103",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "d6fe",
+      "name": "VISA",
+      "currency": "UZS",
+      "balance": "100"
+    },
+    {
+      "id": "0.7682254708077147",
+      "created_at": "02.03.2024",
+      "updated_at": "02.03.2024",
+      "user_id": "d6fe",
+      "name": "Daler",
+      "currency": "BAM",
+      "balance": "12345"
+    },
+    {
+      "id": 0.7753565615896565,
+      "created_at": "04.03.2024",
+      "updated_at": "04.03.2024",
+      "user_id": "4254",
+      "name": "dilrukh",
+      "currency": "USD",
+      "balance": "6000"
+    },
+    {
+      "id": 0.7157764106076603,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "4254",
+      "name": "visa",
+      "currency": "AED",
+      "balance": "3000"
+    },
+    {
+      "id": 0.2721515421334284,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "4254",
+      "name": "dilrukh",
+      "currency": "BGN",
+      "balance": "9000"
+    },
+    {
+      "id": 0.03724362667973402,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "4254",
+      "name": "dilrukh",
+      "currency": "AED",
+      "balance": "555"
+    }
+  ],
+  "transactions": []
 }

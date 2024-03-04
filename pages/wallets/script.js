@@ -1,29 +1,17 @@
-import { createHeader, reload } from "../../modules/ui.js"
+import { getData } from "../../modules/http"
+import { createHeader, reload } from "../../modules/ui"
+createHeader()
+
+let user = JSON.parse(localStorage.getItem('user'))
 
 let wrap_reload = document.querySelector('.reload')
 let add = document.querySelector('.add')
 
-createHeader()
-reload([{
-    type: 'Visa',
-    Money: 'RUB',
-    background: 'linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%)'
-}, {
-    type: 'Visa',
-    Money: 'RUB',
-    background: 'linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%)'
-}, {
-    type: 'Visa',
-    Money: 'RUB',
-    background: 'linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%)'
-}, {
-    type: 'Visa',
-    Money: 'RUB',
-    background: 'linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%)'
-}, {
-    type: 'Visa',
-    Money: 'RUB',
-    background: 'linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%)'
-}], wrap_reload)
-
-wrap_reload.append(add)
+getData('/wallets')
+    .then(res => {
+        if (res.status === 201 || res.status === 200) {
+            let id = res.data.filter(wall => wall.user_id === user.id)
+            reload(id, wrap_reload)
+            wrap_reload.append(add)
+        }
+    })
