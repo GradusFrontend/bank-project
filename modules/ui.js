@@ -25,8 +25,7 @@ export function reload(arr, place) {
         h4.classList.add("about_h4")
         div_1.style.background = `linear-gradient(60deg, ${getRGB()}, ${getRGB()}, ${getRGB()})`
         h3.innerHTML = item.name
-        p.innerHTML = item.currency
-        h4.innerHTML = `Ваш баланс: ${item.balance}` 
+        h4.innerHTML = `Ваш баланс: ${item.balance} ${item.currency}` 
         
         div_1.append(h3, p, h4)
         place.append(div_1)
@@ -99,7 +98,10 @@ export function createHeader() {
     icon.src = "../../public/log-out (1) 1.png"
     
     icon.onclick = () => {
-         location.assign('/pages/signin/')
+        let al = confirm("Вы точно хотите выйти с аккаунта?")
+        if (al) {
+            location.assign('/pages/signin/')
+        } 
     }
 
     return header
