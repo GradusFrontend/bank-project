@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Gilroy;
 }
 
 .wrap {
@@ -174,7 +175,7 @@ header {
         p {
             margin: 0 20px;
             position: absolute;
-            bottom: 10px;
+            bottom: 40px;
             color: white;
         }
     }
