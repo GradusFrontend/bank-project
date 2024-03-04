@@ -24,7 +24,7 @@
   ],
   "wallets": [
     {
-      "id": 0.4400490557438985,
+      "id": "0.4400490557438985",
       "created_at": "02.03.2024",
       "updated_at": "02.03.2024",
       "user_id": "d6fe",
@@ -33,7 +33,7 @@
       "balance": "1234"
     },
     {
-      "id": 0.42344722339894103,
+      "id": "0.42344722339894103",
       "created_at": "02.03.2024",
       "updated_at": "02.03.2024",
       "user_id": "d6fe",
@@ -42,13 +42,40 @@
       "balance": "100"
     },
     {
-      "id": 0.7682254708077147,
+      "id": "0.7682254708077147",
       "created_at": "02.03.2024",
       "updated_at": "02.03.2024",
       "user_id": "d6fe",
       "name": "Daler",
       "currency": "BAM",
       "balance": "12345"
+    },
+    {
+      "id": 0.17718417923630425,
+      "created_at": "04.03.2024",
+      "updated_at": "04.03.2024",
+      "user_id": "87b9",
+      "name": "Jamik's",
+      "currency": "UZS",
+      "balance": "100000"
+    },
+    {
+      "id": 0.24464248916192788,
+      "created_at": "04.03.2024",
+      "updated_at": "04.03.2024",
+      "user_id": "15d4",
+      "name": "Proverka",
+      "currency": "AED",
+      "balance": "123"
+    },
+    {
+      "id": 0.9189727376231283,
+      "created_at": "04.03.2024",
+      "updated_at": "04.03.2024",
+      "user_id": "15d4",
+      "name": "moya",
+      "currency": "AED",
+      "balance": "1000000"
     }
   ],
   "transactions": []

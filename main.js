@@ -1,3 +1,4 @@
+import { getData } from "./modules/http"
 import { createHeader, reload } from "./modules/ui"
 let user = JSON.parse(localStorage.getItem('user'))
 
@@ -9,4 +10,11 @@ createHeader(body)
 
 user_view.innerHTML = `${user.name} ${user.surname}`
 
-// reload(array, rel)
+// reload(rel)
+
+getData('/wallets?user_id=' + user.id)
+    .then(res => {
+        if (res.status === 200 || res.status === 201) {
+            reload(res.data.slice(0, 4), rel);
+        }
+    })
