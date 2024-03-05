@@ -34,6 +34,13 @@
       "name": "Samir",
       "surname": "Shukurulaev",
       "password": "1234"
+    },
+    {
+      "id": "b2c5",
+      "email": "smukhitdinov47@gmail.com",
+      "name": "Sardor",
+      "surname": "Mukhitdinov ",
+      "password": "12345"
     }
   ],
   "wallets": [

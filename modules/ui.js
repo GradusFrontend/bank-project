@@ -97,6 +97,7 @@ export function createHeader() {
         btn.innerHTML = 'Выйти'
         box_r.appendChild(btn);
         btn.onclick = () => {
+            location.assign('/pages/signin/')
             localStorage.clear()
         }
     }
