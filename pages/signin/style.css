@@ -76,3 +76,13 @@ img {
         font-weight: 600;
     }
 }
+.regist{
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0047FF;
+    cursor: pointer;
+}

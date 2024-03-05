@@ -27,6 +27,13 @@
       "name": "Sardor",
       "surname": "Mukhitdinov ",
       "password": "12345"
+    },
+    {
+      "id": "7387",
+      "email": "smukhitdinov41@gmail.com",
+      "name": "Samir",
+      "surname": "Shukurulaev",
+      "password": "1234"
     }
   ],
   "wallets": [
@@ -92,6 +99,42 @@
       "name": "Visa",
       "currency": "AFN",
       "balance": "10000000000000000000"
+    },
+    {
+      "id": 0.4099999275501598,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "7387",
+      "name": "Samir",
+      "currency": "ALL",
+      "balance": "400"
+    },
+    {
+      "id": 0.8043224280304988,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "7387",
+      "name": "yu",
+      "currency": "ANG",
+      "balance": "78"
+    },
+    {
+      "id": 0.17495506136283345,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "7387",
+      "name": "90",
+      "currency": "AED",
+      "balance": "90"
+    },
+    {
+      "id": 0.4654195188584185,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "7387",
+      "name": "Visa",
+      "currency": "AED",
+      "balance": "70000000"
     }
   ],
   "transactions": []

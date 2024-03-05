@@ -96,9 +96,10 @@ export function createHeader() {
         btn.classList.add('btn')
         btn.innerHTML = 'Выйти'
         box_r.appendChild(btn);
-
+        btn.onclick = () => {
+            localStorage.clear()
+        }
     }
-
     return header
 }
 
