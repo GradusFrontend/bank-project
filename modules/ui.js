@@ -1,13 +1,27 @@
+function getRGB() {
+    function randomize() {
+        return Math.floor(Math.random() * 255)
+    }
+
+    let r = randomize()
+    let g = randomize()
+    let b = randomize()
+
+    return `rgb(${r}, ${g}, ${b})`
+}
 export function reload(arr, place) {
     place.innerHTML = ''
+
     for (const item of arr) {
         let div_1 = document.createElement('div')
         let h3 = document.createElement('h3')
         let p = document.createElement('p')
+
         div_1.classList.add('card_visa')
-        div_1.style.background = item.background
-        h3.innerHTML = item.type
-        p.innerHTML = item.Money
+        div_1.style.background = `linear-gradient(60deg, ${getRGB()}, ${getRGB()}, ${getRGB()})`
+        h3.innerHTML = item.name
+        p.innerHTML = item.currency
+
         div_1.append(h3, p)
         place.append(div_1)
     }
@@ -50,6 +64,7 @@ export function createHeader() {
     let email = document.createElement('a')
     let icon = document.createElement('img')
 
+    email.classList.add("user_mail")
     box.classList.add('box')
     box_l.classList.add('box_l')
     box_r.classList.add('box_r')
@@ -92,13 +107,16 @@ export function createHeader() {
     return header
 }
 
+
 export function toaster(text) {
-    let show_mistake = document.createElement('div')
-            show_mistake.classList.add('error')
-            show_mistake.innerHTML = text
-            show_mistake.classList.add('active_error')
-            document.body.append(show_mistake)
-            setTimeout(() => {
-                show_mistake.remove()
-            }, 3000)
+    const custom_alert = document.createElement('div')
+
+        custom_alert.classList.add('error')
+        custom_alert.innerHTML = text
+
+        document.body.append(custom_alert)
+
+        setTimeout(() => {
+            custom_alert.remove()
+        }, 3000)
 }

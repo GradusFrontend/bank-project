@@ -12,7 +12,6 @@ img {
 .wrap {
     width: 1200px;
     margin: 0 auto;
-    background: linear-gradient(rgb(200,200,200));
 }
 
 .reg-wrap {
@@ -31,13 +30,13 @@ img {
         font-weight: 700;
     }
 
-    #add_card-form {
+    form {
         display: flex;
         flex-direction: column;
         gap: 10px;
         width: 100%;
 
-        & input,select {
+        & input, select {
             width: 438px;
             height: 56px;
             border: 1px solid #000;
