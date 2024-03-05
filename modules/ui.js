@@ -16,9 +16,10 @@ export function reload(arr, place) {
         let div_1 = document.createElement('div')
         let h3 = document.createElement('h3')
         let p = document.createElement('p')
+        // background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
 
         div_1.classList.add('card_visa')
-        div_1.style.background = `linear-gradient(60deg, ${getRGB()}, ${getRGB()}, ${getRGB()})`
+        div_1.style.background = `linear-gradient(84.37deg, ${getRGB() + '2.27%'}, ${getRGB() + '92.26%'})`
         h3.innerHTML = item.name
         p.innerHTML = item.currency
 
@@ -73,7 +74,6 @@ export function createHeader() {
     koshelek.classList.add('koshelek')
     akcii.classList.add('akcii')
     icon.classList.add('icon')
-    email.classList.add('email')
     document.body.prepend(header)
     header.append(box)
     box.append(box_l, box_r)
@@ -88,12 +88,8 @@ export function createHeader() {
     glavnaya.innerHTML = 'Главная'
     koshelek.innerHTML = 'Мои кошельки'
     akcii.innerHTML = "Мои транзакции"
-    if(localStorage.getItem('email') !== ''){
-        email.innerHTML = localStorage.getItem('email')
-        return
-    } else {
-        email.innerHTML = 'alexadams@goagle.com'
-    }
+    let e = JSON.parse(localStorage.getItem('user'))
+    email.innerHTML = e.email
     icon.src = "../../public/log-out (1) 1.png"
 
     icon.onclick = () => {

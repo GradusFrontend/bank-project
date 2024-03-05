@@ -1,4 +1,4 @@
-import { getData } from "../../modules/http"
+import { getData, getSymbols } from "../../modules/http"
 import { createHeader, reload } from "../../modules/ui"
 createHeader()
 
