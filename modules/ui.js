@@ -92,14 +92,8 @@ export function createHeader() {
     icon.src = "../../public/log-out (1) 1.png"
 
     icon.onclick = () => {
-        let btn = document.createElement('button')
-        btn.classList.add('btn')
-        btn.innerHTML = 'Выйти'
-        box_r.appendChild(btn);
-        btn.onclick = () => {
             location.assign('/pages/signin/')
             localStorage.clear()
-        }
     }
     return header
 }
