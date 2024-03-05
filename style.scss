@@ -113,18 +113,23 @@ img{
           line-height: 29.11px;
       }
       .pocket{
+        cursor: pointer;
         font-size: 16px;
         font-weight: 600;
         line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
         color: #0047FF;
+        text-decoration: underline #0047FF;
       }
   }
 }
 .reload{
       margin-block: 15px 17px;
       display: grid;
+      row-gap: 70px;
+      height: 175px;
+      overflow-y: hidden;
       grid-template-columns: repeat(4,1fr);
       .card_visa:hover{
         filter: drop-shadow(5px 5px 5px black);

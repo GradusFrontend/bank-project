@@ -10,13 +10,12 @@ function getRGB() {
     return `rgb(${r}, ${g}, ${b})`
 }
 export function reload(arr, place) {
-    place.innerHTML = ''
+    // place.innerHTML = ''
 
     for (const item of arr) {
         let div_1 = document.createElement('div')
         let h3 = document.createElement('h3')
         let p = document.createElement('p')
-        // background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
 
         div_1.classList.add('card_visa')
         div_1.style.background = `linear-gradient(84.37deg, ${getRGB() + '2.27%'}, ${getRGB() + '92.26%'})`

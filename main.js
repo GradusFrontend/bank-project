@@ -8,10 +8,10 @@ let rel = document.querySelector('.reload')
 
 createHeader(body)
 let place_for_reload = document.querySelector('.reload')
-getData('/wallets')
+getData('/wallets?user_id=' + user.id)
     .then(res => {
         if(res.status === 201 || res.status === 200) {
-            reload(res.data, place_for_reload)
+            reload(res.data , place_for_reload)
         }
     })
 let user_data = JSON.parse(localStorage.getItem('user'))
@@ -24,4 +24,8 @@ if(user_data !== ''){
 } else {
     name.innerHTML = 'User'
     email.innerHTML = 'User'
+}
+let pocket = document.querySelector('.pocket')
+pocket.onclick = () => {
+   location.assign('/pages/wallets/')
 }

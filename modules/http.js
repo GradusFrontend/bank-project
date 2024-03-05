@@ -26,7 +26,6 @@ export const postData = async (path, body) => {
 
 export const getSymbols = async () => {
     const symbols = JSON.parse(localStorage.getItem('symbols'))
-
     if(symbols) {
         return symbols
     }

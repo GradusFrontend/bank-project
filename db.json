@@ -56,6 +56,42 @@
       "name": "Daler",
       "currency": "BAM",
       "balance": "12345"
+    },
+    {
+      "id": 0.03519893867629764,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "583f",
+      "name": "Visa",
+      "currency": "USD",
+      "balance": "500"
+    },
+    {
+      "id": 0.32755803751442913,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "583f",
+      "name": "Visa",
+      "currency": "AED",
+      "balance": "500"
+    },
+    {
+      "id": 0.23409267887816543,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "583f",
+      "name": "Visa",
+      "currency": "BOB",
+      "balance": "100000000000000000000000"
+    },
+    {
+      "id": 0.27156518348976566,
+      "created_at": "05.03.2024",
+      "updated_at": "05.03.2024",
+      "user_id": "583f",
+      "name": "Visa",
+      "currency": "AFN",
+      "balance": "10000000000000000000"
     }
   ],
   "transactions": []

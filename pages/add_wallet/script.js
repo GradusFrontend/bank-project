@@ -23,7 +23,6 @@ form.onsubmit = (e) => {
         updated_at: new Date().toLocaleDateString(),
         user_id: JSON.parse(user)?.id
     }
-
     fm.forEach((value, key) => {
         wallet[key] = value
     })
@@ -42,7 +41,3 @@ form.onsubmit = (e) => {
 
     
 }
-let emails = document.querySelectorAll('.email')
-emails.forEach(email => {
-    email.innerHTML = localStorage.getItem('email')
-})
