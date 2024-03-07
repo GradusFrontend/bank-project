@@ -44,10 +44,10 @@ export function reloadTransactions(arr, place) {
         tr.append(idView, walletView, categoryView, sumView, daysAgoView)
 
         idView.innerHTML = item.id
-        walletView.innerHTML = item.wallet
+        walletView.innerHTML = 'Visa'
         categoryView.innerHTML = item.category
         sumView.innerHTML = item.total
-        daysAgoView.innerHTML = item.created_at + ' дней назад'
+        daysAgoView.innerHTML = item.created_at
     }
 }
 
@@ -115,5 +115,5 @@ export function toaster(text, type) {
 
         setTimeout(() => {
             custom_alert.remove()
-        }, 5000)
+        }, 4030)
 }

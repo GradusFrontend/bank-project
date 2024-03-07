@@ -22,6 +22,15 @@ export const postData = async (path, body) => {
         toaster(e.message)
     }
 }
+export const patchData = async (path, item) => {
+    try {
+        const res = await axios.patch(baseURL + path, item)
+
+        return res
+    } catch(e) {
+        toaster(e.message)
+    }
+}
 
 
 export const getSymbols = async () => {

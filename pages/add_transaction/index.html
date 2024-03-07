@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Добавить транзакцию</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
     <script defer src="/modules/guardian.js"></script>
 </head>
 
 <body>
-    <h1 class="title">Добавить транзакцию</h1>
+    <h1>Добавить транзакцию</h1>
     <div class="container">
         <div class="transaction-box">
             <form id="add-transaction" name="transactionAdd">
-                <select name="" id=""></select>
+                <select  id="wallet"></select>
                 <input type="number" name="total" id="total" placeholder="Сумма">
-                <input type="text" name="category" placeholder="Категория">
-                <input type="text" name="description" placeholder="Описание">
+                <input type="text" name="category" id="category" placeholder="Категория">
+                <input type="text" name="description" id="description" placeholder="Описание">
                 <button id="reg-add">Добавить</button>
             </form>
         </div>
