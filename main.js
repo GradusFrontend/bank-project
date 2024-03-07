@@ -1,8 +1,6 @@
 
 import { createHeader, reload } from "./modules/ui"
 import { getData } from "./modules/http"
-import { getData } from "./modules/http"
-import { createHeader, reload, toaster } from "./modules/ui"
 let user = JSON.parse(localStorage.getItem('user'))
 
 let body = document.querySelector('.header')
@@ -13,7 +11,6 @@ let email_view = document.querySelector('.email')
 let emailHeader_view = document.querySelector('.user_mail')
 let rel = document.querySelector('.reload')
 
-createHeader(body)
 let place_for_reload = document.querySelector('.reload')
 getData('/wallets?user_id=' + user.id)
     .then(res => {
@@ -36,9 +33,6 @@ let pocket = document.querySelector('.pocket')
 pocket.onclick = () => {
    location.assign('/pages/wallets/')
 }
-user_view.innerHTML = `${user.name} ${user.surname}`
-emailHeader_view.innerHTML = user.email
-email_view.innerHTML = user.email
 
 
 getData('/wallets?user_id=' + user.id)
