@@ -5,7 +5,6 @@ const select = form.querySelector('select')
 
 getSymbols()
     .then((symbols) => {
-        console.log('start');
         for(let key in symbols) {
             let opt = new Option(`${key} - ${symbols[key]}`, key)
 

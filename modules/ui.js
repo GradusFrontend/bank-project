@@ -27,14 +27,11 @@ export function reload(arr, place) {
     }
 }
 
-export function reloadTransactions(arr, place, size) {
+export function reloadTransactions(arr, place) {
     place.innerHTML = ''
 
-    let tempArr = []
-    if (size === 'small') tempArr = arr.slice(0, 7)
-    else if (size === 'full') tempArr = arr
 
-    for(let item of tempArr) {
+    for(let item of arr) {
         let tr = document.createElement('tr')
         let idView = document.createElement('td')
         let walletView = document.createElement('td')
@@ -48,8 +45,8 @@ export function reloadTransactions(arr, place, size) {
         idView.innerHTML = item.id
         walletView.innerHTML = item.wallet
         categoryView.innerHTML = item.category
-        sumView.innerHTML = item.sum
-        daysAgoView.innerHTML = item.daysAgo + ' дней назад'
+        sumView.innerHTML = item.total
+        daysAgoView.innerHTML = item.created_at + ' дней назад'
     }
 }
 
