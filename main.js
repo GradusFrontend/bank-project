@@ -13,19 +13,17 @@ createHeader(body)
 user_view.innerHTML = `${user.name} ${user.surname}`
 email_view.innerHTML = `${user.email}`
 
-getData('/wallets')
+getData('/wallets?user_id=' + user.id)
     .then(res => {
         if (res.status === 201 || res.status === 200) {
-            let id = res.data.filter(wall => wall.user_id === user.id)
-            let filtered = id.slice(0, 4)
-            reload(filtered, rel)
+            reload(res.data.slice(0, 4), rel)
             view_more.onclick = () => {
                 if (view_more.innerHTML === "Смотреть все кошельки") {
                     view_more.innerHTML = "Скрыть"
-                    reload(id, rel)
+                    reload(res.data, rel)
                 } else {
                     view_more.innerHTML = "Смотреть все кошельки"
-                    reload(filtered, rel)
+                    reload(res.data.slice(0, 4), rel)
                 }
             }
         }

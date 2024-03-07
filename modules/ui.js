@@ -50,8 +50,8 @@ export function reloadTransactions(arr, place, size) {
         idView.innerHTML = item.id
         walletView.innerHTML = item.wallet
         categoryView.innerHTML = item.category
-        sumView.innerHTML = item.sum
-        daysAgoView.innerHTML = item.daysAgo + ' дней назад'
+        sumView.innerHTML = item.total
+        daysAgoView.innerHTML = item.created_at + ' дней назад'
     }
 }
 
@@ -94,11 +94,7 @@ export function createHeader() {
     icon.src = "../../public/log-out (1) 1.png"
 
     icon.onclick = () => {
-        let btn = document.createElement('button')
-        btn.classList.add('btn')
-        btn.innerHTML = 'Выйти'
-        box_r.appendChild(btn);
-
+        location.assign("/signin/")
     }
 
     return header
