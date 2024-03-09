@@ -1,15 +1,14 @@
 import axios from "axios"
-import { toaster } from "./ui"
+import {toaster} from "./ui"
 
 const baseURL = import.meta.env.VITE_BASE_URL
-
 
 export const getData = async (path) => {
     try {
         const res = await axios.get(baseURL + path)
 
         return res
-    } catch(e) {
+    } catch (e) {
         toaster(e.message, 'error')
     }
 }
@@ -18,8 +17,8 @@ export const postData = async (path, body) => {
         const res = await axios.post(baseURL + path, body)
 
         return res
-    } catch(e) {
-        toaster(e.message , 'error')
+    } catch (e) {
+        toaster(e.message, 'error')
     }
 }
 export const patch = async (path, item) => {
@@ -27,15 +26,14 @@ export const patch = async (path, item) => {
         const res = await axios.patch(baseURL + path, item)
 
         return res
-    } catch(e) {
+    } catch (e) {
         toaster(e.message)
     }
 }
 
-
 export const getSymbols = async () => {
     const symbols = JSON.parse(localStorage.getItem('symbols'))
-    if(symbols) {
+    if (symbols) {
         return symbols
     }
 
@@ -46,12 +44,12 @@ export const getSymbols = async () => {
             }
         })
 
-        if(res.status === 200 || res.status === 201) {
+        if (res.status === 200 || res.status === 201) {
             localStorage.setItem('symbols', JSON.stringify(res.data.symbols))
             return res.data.symbols
         }
 
-    } catch(e) {
+    } catch (e) {
         toaster(e.message, 'error')
     }
 }

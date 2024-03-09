@@ -11,47 +11,47 @@ img {
     width: 1200px;
     margin: 0 auto;
 }
-  
-.start{
+
+.start {
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.first_side{
+.first_side {
     width: 350px;
     height: 700px;
-    .logo{
+    .logo {
         cursor: pointer;
         width: 45px;
         height: 45px;
         border-radius: 150px;
         background: #C4C4C4;
-        margin-block: 25px  65px;
+        margin-block: 25px 65px;
     }
-    .flexer{
+    .flexer {
         display: flex;
         align-items: center;
         gap: 70px;
-        select{
+        select {
             border-radius: 5px;
         }
     }
-    .inf_inside{
+    .inf_inside {
         margin: 25px 0 0 50px;
         width: 220px;
         height: 450px;
-        p{
+        p {
             margin-block: 5px;
             font-size: 17px;
-            .gray{
+            .gray {
                 color: grey;
             }
         }
-        hr{
+        hr {
             margin: 20px -10px 20px -25px;
         }
-        .width{
+        .width {
             font-size: 7px;
             color: grey;
             margin-left: -20px;
@@ -59,51 +59,51 @@ img {
         }
     }
 }
-.second_side{
+.second_side {
     width: 850px;
     height: 700px;
     border-radius: 70px;
     background: #6C95FF;
-    .reload{
-       height: 300px;
-       margin-top: 50px;
-       margin-left: 230px;
+    .reload {
+        height: 300px;
+        margin-top: 50px;
+        margin-left: 230px;
     }
 
 }
-.second_side:hover{
+.second_side:hover {
     filter: drop-shadow(10px 10px 10px black);
 }
-.logo:hover{
+.logo:hover {
     filter: drop-shadow(2px 2px 2px black);
 }
-.letter{
+.letter {
     padding-top: 6px;
     margin-left: 15px;
     color: white;
 }
-.main_flex{
+.main_flex {
     margin: 0 70px;
     display: flex;
     align-items: center;
     gap: 50px;
-    p{
+    p {
         color: white;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
-    .lorem{
+    .lorem {
         width: 400px;
     }
-    .flex_2{
+    .flex_2 {
         margin-top: 20px;
         display: flex;
         gap: 7px;
     }
-    .grid_one{
+    .grid_one {
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        row-gap: 35px ;
-        input{
+        row-gap: 35px;
+        input {
             padding-inline: 20px;
             border: 0;
             width: 300px;
@@ -112,19 +112,19 @@ img {
         }
     }
 }
-.clarify{
+.clarify {
     margin: 40px 130px;
     display: flex;
     align-items: center;
     gap: 30px;
-    input{
+    input {
         padding-inline: 20px;
         border: 0;
         width: 170px;
         height: 37px;
         border-radius: 12px;
     }
-    button{
+    button {
         cursor: pointer;
         width: 170px;
         height: 37px;

@@ -1,382 +1,345 @@
 {
-  "users": [
-    {
-      "id": "d6fe",
-      "email": "dsarifkulo021@gmail.com",
-      "name": "Daler",
-      "surname": "Sharifkulov",
-      "password": "1234"
-    },
-    {
-      "id": "15d4",
-      "email": "abduxafizovjamik@gmail.com",
-      "name": "Талибжанов ",
-      "surname": "бегжон",
-      "password": "123456789"
-    },
-    {
-      "id": "87b9",
-      "email": "weljnieqwie@gmail.com",
-      "name": "Furkat",
-      "surname": "Usupov",
-      "password": "123"
-    },
-    {
-      "id": "583f",
-      "email": "smukhitdinov471@gmail.com",
-      "name": "Sardor",
-      "surname": "Mukhitdinov ",
-      "password": "12345"
-    },
-    {
-      "id": "7387",
-      "email": "smukhitdinov41@gmail.com",
-      "name": "Samir",
-      "surname": "Shukurulaev",
-      "password": "1234"
-    },
-    {
-      "id": "b2c5",
-      "email": "smukhitdinov47@gmail.com",
-      "name": "Sardor",
-      "surname": "Mukhitdinov ",
-      "password": "12345"
-    },
-    {
-      "id": "1d4d",
-      "email": "ruslandjavadov998@gmail.com",
-      "name": "gardus",
-      "surname": "baber",
-      "password": "1234"
-    },
-    {
-      "id": "9aa2",
-      "email": "asd@gmail.com",
-      "name": "Ivan",
-      "surname": "Hamers",
-      "password": "1234"
-    },
-    {
-      "id": "b7a8",
-      "email": "baber@gmail.com",
-      "name": "damir",
-      "surname": "dambitovich",
-      "password": "1234"
-    }
-  ],
-  "wallets": [
-    {
-      "id": "0.4400490557438985",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "Daler",
-      "currency": "USD",
-      "balance": "1134"
-    },
-    {
-      "id": "0.42344722339894103",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "VISA",
-      "currency": "UZS",
-      "balance": "100"
-    },
-    {
-      "id": "0.7682254708077147",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "Daler",
-      "currency": "BAM",
-      "balance": "1011"
-    },
-    {
-      "id": "0.03519893867629764",
-      "created_at": "05.03.2024",
-      "updated_at": "05.03.2024",
-      "user_id": "583f",
-      "name": "Visa",
-      "currency": "USD",
-      "balance": "500"
-    },
-    {
-      "id": "0.32755803751442913",
-      "created_at": "05.03.2024",
-      "updated_at": "05.03.2024",
-      "user_id": "583f",
-      "name": "Visa",
-      "currency": "AED",
-      "balance": "500"
-    },
-    {
-      "id": "0.23409267887816543",
-      "created_at": "05.03.2024",
-      "updated_at": "05.03.2024",
-      "user_id": "583f",
-      "name": "Visa",
-      "currency": "BOB",
-      "balance": "1e+23"
-    },
-    {
-      "id": "0.27156518348976566",
-      "created_at": "05.03.2024",
-      "updated_at": "05.03.2024",
-      "user_id": "583f",
-      "name": "Visa",
-      "currency": "AFN",
-      "balance": "10000000000000000000"
-    },
-    {
-      "id": "0.4099999275501598",
-      "created_at": "05.03.2024",
-      "updated_at": "05.03.2024",
-      "user_id": "7387",
-      "name": "Samir",
-      "currency": "ALL",
-      "balance": "400"
-    },
-    {
-      "id": "0.8043224280304988",
-      "created_at": "05.03.2024",
-      "updated_at": "05.03.2024",
-      "user_id": "7387",
-      "name": "yu",
-      "currency": "ANG",
-      "balance": "78"
-    },
-    {
-      "id": "0.17495506136283345",
-      "created_at": "05.03.2024",
-      "updated_at": "05.03.2024",
-      "user_id": "7387",
-      "name": "90",
-      "currency": "AED",
-      "balance": "90"
-    },
-    {
-      "id": "0.4654195188584185",
-      "created_at": "05.03.2024",
-      "updated_at": "05.03.2024",
-      "user_id": "7387",
-      "name": "Visa",
-      "currency": "AED",
-      "balance": "70000000"
-    },
-    {
-      "id": "0.4128494505646596",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "Gradus Visa",
-      "currency": "CLF",
-      "balance": "30000"
-    },
-    {
-      "id": "0.203512042682791",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "figoo",
-      "currency": "AMD",
-      "balance": "4441445"
-    },
-    {
-      "id": "0.30000351599848574",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "Arabic",
-      "currency": "AED",
-      "balance": "55544554"
-    },
-    {
-      "id": "0.6762300151826555",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "rubleeees",
-      "currency": "RUB",
-      "balance": "999223"
-    },
-    {
-      "id": "0.9762308473939847",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "max pain",
-      "currency": "BRL",
-      "balance": "1"
-    },
-    {
-      "id": "0.7668035463227536",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "deneeeg",
-      "currency": "JPY",
-      "balance": "666666"
-    },
-    {
-      "id": "0.4384463164497967",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "yupiiii",
-      "currency": "SGD",
-      "balance": "77777"
-    },
-    {
-      "id": "0.8866946535582323",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "1d4d",
-      "name": "dolllars",
-      "currency": "USD",
-      "balance": "99999"
-    },
-    {
-      "id": "0.10749882688432977",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "fffff",
-      "currency": "AED",
-      "balance": "333"
-    },
-    {
-      "id": "0.012517833628615804",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "fffff",
-      "currency": "AED",
-      "balance": "333"
-    },
-    {
-      "id": "0.22049464613657044",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "ffff",
-      "currency": "AED",
-      "balance": "44444"
-    },
-    {
-      "id": "0.611076091977895",
-      "created_at": "02.03.2024",
-      "updated_at": "02.03.2024",
-      "user_id": "d6fe",
-      "name": "ffff",
-      "currency": "AED",
-      "balance": "44444"
-    },
-    {
-      "id": "0.7771882909729526",
-      "created_at": "04.03.2024",
-      "updated_at": "04.03.2024",
-      "user_id": "1d4d",
-      "name": "hghg",
-      "currency": "AED",
-      "balance": "3333"
-    },
-    {
-      "id": "0.819833541860906",
-      "created_at": "04.03.2024",
-      "updated_at": "04.03.2024",
-      "user_id": "9aa2",
-      "name": "sdasdasd",
-      "currency": "AED",
-      "balance": "333"
-    },
-    {
-      "id": "0.3850671850098002",
-      "created_at": "07.03.2024",
-      "updated_at": "07.03.2024",
-      "user_id": "583f",
-      "name": "Sardor",
-      "currency": "USD",
-      "balance": "1678854952340"
-    },
-    {
-      "id": "0.455361222041196",
-      "created_at": "09.03.2024",
-      "updated_at": "09.03.2024",
-      "user_id": "583f",
-      "name": "Sardor2",
-      "currency": "USD",
-      "balance": "1234567881"
-    }
-  ],
-  "transactions": [
-    {
-      "id": "e26d",
-      "created_at": "20240307, 17:21",
-      "updated_at": "17:21:25",
-      "user_id": "d6fe",
-      "wallet": {
-        "created_at": "02.03.2024",
-        "updated_at": "02.03.2024",
-        "name": "Daler",
-        "currency": "BAM",
-        "balance": "1011"
-      },
-      "total": "100",
-      "category": "car",
-      "description": "ferrari",
-      "wallet_id": "0.7682254708077147"
-    },
-    {
-      "id": "0659",
-      "created_at": "20240307, 17:23",
-      "updated_at": "17:23:33",
-      "user_id": "d6fe",
-      "wallet": {
-        "created_at": "02.03.2024",
-        "updated_at": "02.03.2024",
-        "name": "Daler",
-        "currency": "USD",
-        "balance": "1134"
-      },
-      "total": "100",
-      "category": "car",
-      "description": "ferrari",
-      "wallet_id": "0.4400490557438985"
-    },
-    {
-      "id": "772a",
-      "created_at": "20240309, 10:21",
-      "updated_at": "10:21:56",
-      "user_id": "583f",
-      "total": "12344",
-      "category": "Shopping",
-      "description": "Tomorrow ",
-      "wallet_id": "0.3850671850098002",
-      "wallet": {
-        "created_at": "07.03.2024",
-        "updated_at": "07.03.2024",
-        "name": "Sardor",
-        "currency": "USD",
-        "balance": 110312
-      }
-    },
-    {
-      "id": "7a47",
-      "created_at": "20240309, 10:24",
-      "updated_at": "10:24:11",
-      "user_id": "583f",
-      "total": "110312",
-      "category": "Shopping",
-      "description": "Tomorrow ",
-      "wallet_id": "0.3850671850098002",
-      "wallet": {
-        "created_at": "07.03.2024",
-        "updated_at": "07.03.2024",
-        "name": "Sardor",
-        "currency": "USD",
-        "balance": 0
-      }
-    }
-  ]
+    "users": [
+        {
+            "id": "d6fe",
+            "email": "dsarifkulo021@gmail.com",
+            "name": "Daler",
+            "surname": "Sharifkulov",
+            "password": "1234"
+        }, {
+            "id": "15d4",
+            "email": "abduxafizovjamik@gmail.com",
+            "name": "Талибжанов ",
+            "surname": "бегжон",
+            "password": "123456789"
+        }, {
+            "id": "87b9",
+            "email": "weljnieqwie@gmail.com",
+            "name": "Furkat",
+            "surname": "Usupov",
+            "password": "123"
+        }, {
+            "id": "583f",
+            "email": "smukhitdinov471@gmail.com",
+            "name": "Sardor",
+            "surname": "Mukhitdinov ",
+            "password": "12345"
+        }, {
+            "id": "7387",
+            "email": "smukhitdinov41@gmail.com",
+            "name": "Samir",
+            "surname": "Shukurulaev",
+            "password": "1234"
+        }, {
+            "id": "b2c5",
+            "email": "smukhitdinov47@gmail.com",
+            "name": "Sardor",
+            "surname": "Mukhitdinov ",
+            "password": "12345"
+        }, {
+            "id": "1d4d",
+            "email": "ruslandjavadov998@gmail.com",
+            "name": "gardus",
+            "surname": "baber",
+            "password": "1234"
+        }, {
+            "id": "9aa2",
+            "email": "asd@gmail.com",
+            "name": "Ivan",
+            "surname": "Hamers",
+            "password": "1234"
+        }, {
+            "id": "b7a8",
+            "email": "baber@gmail.com",
+            "name": "damir",
+            "surname": "dambitovich",
+            "password": "1234"
+        }
+    ],
+    "wallets": [
+        {
+            "id": "0.4400490557438985",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "d6fe",
+            "name": "Daler",
+            "currency": "USD",
+            "balance": "1134"
+        }, {
+            "id": "0.42344722339894103",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "d6fe",
+            "name": "VISA",
+            "currency": "UZS",
+            "balance": "100"
+        }, {
+            "id": "0.7682254708077147",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "d6fe",
+            "name": "Daler",
+            "currency": "BAM",
+            "balance": "1011"
+        }, {
+            "id": "0.03519893867629764",
+            "created_at": "05.03.2024",
+            "updated_at": "05.03.2024",
+            "user_id": "583f",
+            "name": "Visa",
+            "currency": "USD",
+            "balance": "500"
+        }, {
+            "id": "0.32755803751442913",
+            "created_at": "05.03.2024",
+            "updated_at": "05.03.2024",
+            "user_id": "583f",
+            "name": "Visa",
+            "currency": "AED",
+            "balance": "500"
+        }, {
+            "id": "0.23409267887816543",
+            "created_at": "05.03.2024",
+            "updated_at": "05.03.2024",
+            "user_id": "583f",
+            "name": "Visa",
+            "currency": "BOB",
+            "balance": "1e+23"
+        }, {
+            "id": "0.27156518348976566",
+            "created_at": "05.03.2024",
+            "updated_at": "05.03.2024",
+            "user_id": "583f",
+            "name": "Visa",
+            "currency": "AFN",
+            "balance": "10000000000000000000"
+        }, {
+            "id": "0.4099999275501598",
+            "created_at": "05.03.2024",
+            "updated_at": "05.03.2024",
+            "user_id": "7387",
+            "name": "Samir",
+            "currency": "ALL",
+            "balance": "400"
+        }, {
+            "id": "0.8043224280304988",
+            "created_at": "05.03.2024",
+            "updated_at": "05.03.2024",
+            "user_id": "7387",
+            "name": "yu",
+            "currency": "ANG",
+            "balance": "78"
+        }, {
+            "id": "0.17495506136283345",
+            "created_at": "05.03.2024",
+            "updated_at": "05.03.2024",
+            "user_id": "7387",
+            "name": "90",
+            "currency": "AED",
+            "balance": "90"
+        }, {
+            "id": "0.4654195188584185",
+            "created_at": "05.03.2024",
+            "updated_at": "05.03.2024",
+            "user_id": "7387",
+            "name": "Visa",
+            "currency": "AED",
+            "balance": "70000000"
+        }, {
+            "id": "0.4128494505646596",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "1d4d",
+            "name": "Gradus Visa",
+            "currency": "CLF",
+            "balance": "30000"
+        }, {
+            "id": "0.203512042682791",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "1d4d",
+            "name": "figoo",
+            "currency": "AMD",
+            "balance": "4441445"
+        }, {
+            "id": "0.30000351599848574",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "1d4d",
+            "name": "Arabic",
+            "currency": "AED",
+            "balance": "55544554"
+        }, {
+            "id": "0.6762300151826555",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "1d4d",
+            "name": "rubleeees",
+            "currency": "RUB",
+            "balance": "999223"
+        }, {
+            "id": "0.9762308473939847",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "1d4d",
+            "name": "max pain",
+            "currency": "BRL",
+            "balance": "1"
+        }, {
+            "id": "0.7668035463227536",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "1d4d",
+            "name": "deneeeg",
+            "currency": "JPY",
+            "balance": "666666"
+        }, {
+            "id": "0.4384463164497967",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "1d4d",
+            "name": "yupiiii",
+            "currency": "SGD",
+            "balance": "77777"
+        }, {
+            "id": "0.8866946535582323",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "1d4d",
+            "name": "dolllars",
+            "currency": "USD",
+            "balance": "99999"
+        }, {
+            "id": "0.10749882688432977",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "d6fe",
+            "name": "fffff",
+            "currency": "AED",
+            "balance": "333"
+        }, {
+            "id": "0.012517833628615804",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "d6fe",
+            "name": "fffff",
+            "currency": "AED",
+            "balance": "333"
+        }, {
+            "id": "0.22049464613657044",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "d6fe",
+            "name": "ffff",
+            "currency": "AED",
+            "balance": "44444"
+        }, {
+            "id": "0.611076091977895",
+            "created_at": "02.03.2024",
+            "updated_at": "02.03.2024",
+            "user_id": "d6fe",
+            "name": "ffff",
+            "currency": "AED",
+            "balance": "44444"
+        }, {
+            "id": "0.7771882909729526",
+            "created_at": "04.03.2024",
+            "updated_at": "04.03.2024",
+            "user_id": "1d4d",
+            "name": "hghg",
+            "currency": "AED",
+            "balance": "3333"
+        }, {
+            "id": "0.819833541860906",
+            "created_at": "04.03.2024",
+            "updated_at": "04.03.2024",
+            "user_id": "9aa2",
+            "name": "sdasdasd",
+            "currency": "AED",
+            "balance": "333"
+        }, {
+            "id": "0.3850671850098002",
+            "created_at": "07.03.2024",
+            "updated_at": "07.03.2024",
+            "user_id": "583f",
+            "name": "Sardor",
+            "currency": "USD",
+            "balance": "1678854952340"
+        }, {
+            "id": "0.455361222041196",
+            "created_at": "09.03.2024",
+            "updated_at": "09.03.2024",
+            "user_id": "583f",
+            "name": "Sardor2",
+            "currency": "USD",
+            "balance": "1234567881"
+        }
+    ],
+    "transactions": [
+        {
+            "id": "e26d",
+            "created_at": "20240307, 17:21",
+            "updated_at": "17:21:25",
+            "user_id": "d6fe",
+            "wallet": {
+                "created_at": "02.03.2024",
+                "updated_at": "02.03.2024",
+                "name": "Daler",
+                "currency": "BAM",
+                "balance": "1011"
+            },
+            "total": "100",
+            "category": "car",
+            "description": "ferrari",
+            "wallet_id": "0.7682254708077147"
+        }, {
+            "id": "0659",
+            "created_at": "20240307, 17:23",
+            "updated_at": "17:23:33",
+            "user_id": "d6fe",
+            "wallet": {
+                "created_at": "02.03.2024",
+                "updated_at": "02.03.2024",
+                "name": "Daler",
+                "currency": "USD",
+                "balance": "1134"
+            },
+            "total": "100",
+            "category": "car",
+            "description": "ferrari",
+            "wallet_id": "0.4400490557438985"
+        }, {
+            "id": "772a",
+            "created_at": "20240309, 10:21",
+            "updated_at": "10:21:56",
+            "user_id": "583f",
+            "total": "12344",
+            "category": "Shopping",
+            "description": "Tomorrow ",
+            "wallet_id": "0.3850671850098002",
+            "wallet": {
+                "created_at": "07.03.2024",
+                "updated_at": "07.03.2024",
+                "name": "Sardor",
+                "currency": "USD",
+                "balance": 110312
+            }
+        }, {
+            "id": "7a47",
+            "created_at": "20240309, 10:24",
+            "updated_at": "10:24:11",
+            "user_id": "583f",
+            "total": "110312",
+            "category": "Shopping",
+            "description": "Tomorrow ",
+            "wallet_id": "0.3850671850098002",
+            "wallet": {
+                "created_at": "07.03.2024",
+                "updated_at": "07.03.2024",
+                "name": "Sardor",
+                "currency": "USD",
+                "balance": 0
+            }
+        }
+    ]
 }

@@ -37,7 +37,8 @@ img {
         gap: 10px;
         width: 100%;
 
-        & input,select {
+        & input,
+        select {
             width: 438px;
             height: 56px;
             border: 1px solid #000;
@@ -58,7 +59,7 @@ img {
             color: #fff;
             font-size: 17px;
             cursor: pointer;
-            transition: .3s ease;
+            transition: 0.3s ease;
         }
 
         & button:hover {

@@ -1,5 +1,5 @@
-import  moment  from 'moment';
-import { getData } from './http';
+import moment from 'moment';
+import {getData} from './http';
 export function getRGB() {
     function randomize() {
         return Math.floor(Math.random() * 255)
@@ -19,24 +19,30 @@ export function reload(arr, place) {
         let h3 = document.createElement('h3')
         let p = document.createElement('p')
 
-        div_1.classList.add('card_visa')
-        div_1.style.background = `linear-gradient(84.37deg, ${getRGB() + '2.27%'}, ${getRGB() + '92.26%'})`
+        div_1
+            .classList
+            .add('card_visa')
+        div_1.style.background = `linear-gradient(84.37deg, ${getRGB() + '2.27%'}, ${getRGB() +
+                '92.26%'})`
         h3.innerHTML = item.name
         p.innerHTML = item.currency
-        div_1.id = item.id
-        div_1.append(h3, p)
+        div_1.id = item
+            .id
+            div_1
+            .append(h3, p)
         place.append(div_1)
         div_1.onclick = () => {
             const user = JSON.parse(localStorage.getItem('user'))
-              getData('/wallets?user_id' + user.id)
-              .then(res => {
-                res.data.find(item => {
-                    if(item.id === div_1.id){
-                        localStorage.setItem('recent_card', JSON.stringify(item))
-                        location.assign('/pages/your_wallet/')
-                    }
-                })
-              })
+            getData('/wallets?user_id' + user.id).then(res => {
+                res
+                    .data
+                    .find(item => {
+                        if (item.id === div_1.id) {
+                            localStorage.setItem('recent_card', JSON.stringify(item))
+                            location.assign('/pages/your_wallet/')
+                        }
+                    })
+            })
         }
     }
 }
@@ -44,7 +50,7 @@ export function reload(arr, place) {
 export function reloadTransactions(arr, place) {
     place.innerHTML = ''
 
-    for(let item of arr.reverse()) {
+    for (let item of arr.reverse()) {
         let tr = document.createElement('tr')
         let idView = document.createElement('td')
         let walletView = document.createElement('td')
@@ -78,16 +84,36 @@ export function createHeader() {
     let email = document.createElement('a')
     let icon = document.createElement('img')
 
-    email.classList.add("user_mail")
-    box.classList.add('box')
-    box_l.classList.add('box_l')
-    box_r.classList.add('box_r')
-    icon.classList.add('icon')
-    glavnaya.classList.add('glavnaya')
-    koshelek.classList.add('koshelek')
-    akcii.classList.add('akcii')
-    icon.classList.add('icon')
-    document.body.prepend(header)
+    email
+        .classList
+        .add("user_mail")
+    box
+        .classList
+        .add('box')
+    box_l
+        .classList
+        .add('box_l')
+    box_r
+        .classList
+        .add('box_r')
+    icon
+        .classList
+        .add('icon')
+    glavnaya
+        .classList
+        .add('glavnaya')
+    koshelek
+        .classList
+        .add('koshelek')
+    akcii
+        .classList
+        .add('akcii')
+    icon
+        .classList
+        .add('icon')
+    document
+        .body
+        .prepend(header)
     header.append(box)
     box.append(box_l, box_r)
     box_l.append(glavnaya, koshelek, akcii)
@@ -96,7 +122,6 @@ export function createHeader() {
     glavnaya.href = "/"
     koshelek.href = "/pages/wallets/"
     akcii.href = "/pages/transactions/"
-
 
     glavnaya.innerHTML = 'Главная'
     koshelek.innerHTML = 'Мои кошельки'
@@ -107,29 +132,36 @@ export function createHeader() {
     icon.style.cursor = 'pointer'
 
     icon.onclick = () => {
-            location.assign('/pages/signin/')
-            localStorage.clear()
+        location.assign('/pages/signin/')
+        localStorage.clear()
         localStorage.removeItem('user')
         location.assign('/pages/signin/')
     }
     return header
 }
 
-
 export function toaster(text, type) {
     const custom_alert = document.createElement('div')
     const time_bar = document.createElement('div')
 
-        custom_alert.classList.add('toaster', `toaster_${type}`)
-        custom_alert.classList.add('toaster-anim')
-        time_bar.classList.add('time_bar')
-        custom_alert.innerHTML = text
+    custom_alert
+        .classList
+        .add('toaster', `toaster_${type}`)
+    custom_alert
+        .classList
+        .add('toaster-anim')
+    time_bar
+        .classList
+        .add('time_bar')
+    custom_alert.innerHTML = text
 
-        custom_alert.append(time_bar)
+    custom_alert.append(time_bar)
 
-        document.body.append(custom_alert)
+    document
+        .body
+        .append(custom_alert)
 
-        setTimeout(() => {
-            custom_alert.remove()
-        }, 4030)
+    setTimeout(() => {
+        custom_alert.remove()
+    }, 4030)
 }

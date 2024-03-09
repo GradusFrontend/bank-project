@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.scss">
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="/modules/guardian.js"></script>
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.scss">
+        <link rel="stylesheet" href="./style.css">
+        <script defer="defer" src="/modules/guardian.js"></script>
+        <title>Document</title>
+    </head>
 
-<body>
+    <body>
 
+        <div class="wrap">
+            <div class="latest_transactions">
 
-    
-    <div class="wrap">
-        <div class="latest_transactions">
+                <table id="latest_transactions_table" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Отправлено с кошелька</th>
+                            <th>Категория</th>
+                            <th>Сумма транзации</th>
+                            <th>Когда</th>
+                        </tr>
+                    </thead>
 
-            <table id="latest_transactions_table" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Отправлено с кошелька</th>
-                        <th>Категория</th>
-                        <th>Сумма транзации</th>
-                        <th>Когда</th>
-                    </tr>
-                </thead>
+                    <tbody id="latest_transactions_tbody"></tbody>
+                </table>
 
-                <tbody id="latest_transactions_tbody">
-                </tbody>
-            </table>
-
+            </div>
         </div>
-    </div>
 
-    <script type="module" src="./script.js"></script>
-</body>
+        <script type="module" src="./script.js"></script>
+    </body>
 
 </html>
