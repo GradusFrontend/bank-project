@@ -198,13 +198,22 @@
       "balance": "333"
     },
     {
-      "id": 0.9721112117546657,
+      "id": "0.9721112117546657",
       "created_at": "09.03.2024",
       "updated_at": "09.03.2024",
       "user_id": "87b9",
       "name": "Jamik's",
       "currency": "AED",
       "balance": "1222222"
+    },
+    {
+      "id": "0.6440893385954263",
+      "created_at": "09.03.2024",
+      "updated_at": "09.03.2024",
+      "user_id": 6,
+      "name": "Daler",
+      "currency": "AED",
+      "balance": 988
     }
   ],
   "transactions": [
@@ -241,6 +250,23 @@
       "category": "car",
       "description": "ferrari",
       "wallet_id": "0.4400490557438985"
+    },
+    {
+      "id": "a8e6",
+      "created_at": "20240309, 17:5",
+      "updated_at": "17:05:46",
+      "user_id": 6,
+      "wallet": {
+        "created_at": "09.03.2024",
+        "updated_at": "09.03.2024",
+        "name": "Daler",
+        "currency": "AED",
+        "balance": 988
+      },
+      "total": "12",
+      "category": "car",
+      "description": "ferrari",
+      "wallet_id": "0.6440893385954263"
     }
   ]
 }
