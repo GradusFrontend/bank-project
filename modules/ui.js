@@ -26,10 +26,8 @@ export function reload(arr, place) {
                 '92.26%'})`
         h3.innerHTML = item.name
         p.innerHTML = item.currency
-        div_1.id = item
-            .id
-            div_1
-            .append(h3, p)
+        div_1.id = item.id
+            div_1.append(h3, p)
         place.append(div_1)
         div_1.onclick = () => {
             const user = JSON.parse(localStorage.getItem('user'))
