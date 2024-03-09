@@ -71,12 +71,8 @@ img {
     }
 
 }
-.second_side:hover {
-    filter: drop-shadow(10px 10px 10px black);
-}
-.logo:hover {
-    filter: drop-shadow(2px 2px 2px black);
-}
+
+
 .letter {
     padding-top: 6px;
     margin-left: 15px;
@@ -111,6 +107,9 @@ img {
             border-radius: 12px;
         }
     }
+}
+.logo:hover {
+    filter: drop-shadow(2px 2px 2px black);
 }
 .clarify {
     margin: 40px 130px;
