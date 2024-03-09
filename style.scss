@@ -7,6 +7,10 @@
 img {
   max-width: 100%;
 }
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .toaster {
   width: fit-content;
@@ -49,10 +53,6 @@ img {
   background-color: rgb(9, 124, 255);
 }
 
-.wrap {
-  width: 1200px;
-  margin: 0 auto;
-}
 
 .latest_transactions {
 

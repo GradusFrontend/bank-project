@@ -1,5 +1,6 @@
 import  moment  from 'moment';
-function getRGB() {
+import { getData } from './http';
+export function getRGB() {
     function randomize() {
         return Math.floor(Math.random() * 255)
     }
@@ -22,9 +23,21 @@ export function reload(arr, place) {
         div_1.style.background = `linear-gradient(84.37deg, ${getRGB() + '2.27%'}, ${getRGB() + '92.26%'})`
         h3.innerHTML = item.name
         p.innerHTML = item.currency
-
+        div_1.id = item.id
         div_1.append(h3, p)
         place.append(div_1)
+        div_1.onclick = () => {
+            const user = JSON.parse(localStorage.getItem('user'))
+              getData('/wallets?user_id' + user.id)
+              .then(res => {
+                res.data.find(item => {
+                    if(item.id === div_1.id){
+                        localStorage.setItem('recent_card', JSON.stringify(item))
+                        location.assign('/pages/your_wallet/')
+                    }
+                })
+              })
+        }
     }
 }
 
@@ -50,7 +63,6 @@ export function reloadTransactions(arr, place) {
         walletView.innerHTML = item.wallet.name
         categoryView.innerHTML = item.category
         sumView.innerHTML = item.total
-        console.log(item.created_at);
         daysAgoView.innerHTML = moment(item.created_at, "YYYYMMDD, h:mm").fromNow()
     }
 }

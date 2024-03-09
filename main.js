@@ -1,6 +1,3 @@
-import { createHeader, reload } from "./modules/ui"
-import { getData } from "./modules/http"
-import moment from "moment"
 import { getData } from "./modules/http"
 import { createHeader, reload, reloadTransactions} from "./modules/ui"
 let user = JSON.parse(localStorage.getItem('user'))
@@ -9,10 +6,6 @@ let body = document.querySelector('.header')
 const tbody = document.querySelector('#latest_transactions_tbody')
 createHeader(body)
 
-
-let user_view = document.querySelector('#user')
-let email_view = document.querySelector('.email')
-let emailHeader_view = document.querySelector('.user_mail')
 let rel = document.querySelector('.reload')
 let place_for_reload = document.querySelector('.reload')
 getData('/wallets?user_id=' + user.id)
@@ -24,7 +17,7 @@ getData('/wallets?user_id=' + user.id)
 let user_data = JSON.parse(localStorage.getItem('user'))
 let name = document.querySelector('.name')
 let email = document.querySelector('.email')
-console.log(email);
+
 if(user_data !== ''){
     name.innerHTML = `${user_data.name}` + ' ' + `${user_data.surname}`
     email.innerHTML = `${user_data.email}`
@@ -50,3 +43,7 @@ getData('/transactions?user_id=' + user.id)
         reloadTransactions(res.data, tbody, 'small');
     }
 })
+let link_for_transactions = document.querySelector('#all_transactions_link')
+link_for_transactions.onclick = () => {
+    location.assign('/pages/transactions/')
+}
