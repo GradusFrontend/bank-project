@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/fonts/Gilroy/stylesheet.css">
+    <script defer src="/modules/guardian.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/style.scss">
+    <title>CARD</title>
+</head>
+
+<body>
+
+    <section class="about_card">
+        <div class="container">
+            <div class="card">
+                <div data-tilt data-tilt-glare data-tilt-max-glare="0.4" data-tilt data-tilt-scale="1.1" class="first_box">
+                    <p id="cn" class="name_card">Card Name</p>
+                    <h1 class="bal"> Balance</h1>
+                </div>
+                
+                <div  class="another_side">
+                    <p class="anside_card">Card Name</p>
+                    <h1 id="cur"> Balance</h1>
+                </div>
+
+                <div class="second_box">
+                    <p class="name_card">
+                        Конвертировать в:
+                    </p>
+
+                    <form name="convert_form" id="convert_form">
+                        <select name="currency" id="currency">
+                        </select>
+
+                        <button id="convert">Конвертировать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../modules/vanilla-tilt.js"></script>
+    <script type="module" src="./script.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".first_box"), {
+            max: 25,
+            speed: 400
+        });
+        
+        // //It also supports NodeList
+        // VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script> 
+</body>
+
+</html>

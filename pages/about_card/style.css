@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: rgb(225, 229, 249);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.first_box {
+    width: 470px;
+    height: 270px;
+    background: rgb(174, 177, 238);
+    background: radial-gradient(circle, rgba(174, 177, 238, 1) 0%, rgba(162, 228, 235, 1) 52%, rgba(170, 148, 233, 1) 100%);
+    border-radius: 10px;
+    padding: 20px;
+
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.second_box {
+    width: 470px;
+    height: 270px;
+    background: rgb(154, 180, 58);
+    background: radial-gradient(circle, rgba(154, 180, 58, 1) 0%, rgba(57, 247, 37, 1) 39%, rgba(224, 253, 29, 1) 66%, rgba(69, 252, 248, 1) 100%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.name_card {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    /* padding: 30px; */
+    margin-bottom: 40px;
+
+}
+
+.bal {
+    color: white;
+    padding-top: 30px;
+    transform: translateZ(20px)
+
+}
+
+#convert {
+    width: 100%;
+    height: 40px;
+    color: black;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px black solid;
+    margin-top: 90px;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.another_side {
+    width: 470px;
+    height: 270px;
+    background-color: rgb(91, 108, 108);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.anside_card{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+#cur{
+    color: white;
+    transform: translateZ(20px)
+}
+.anside{
+    display: none;
+}
+
+
+#cn{
+    font-size: 40px;
+    transform: translateZ(20px)
+}
