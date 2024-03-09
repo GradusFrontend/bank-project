@@ -72,7 +72,7 @@
       "user_id": "d6fe",
       "name": "Daler",
       "currency": "USD",
-      "balance": "1234"
+      "balance": "1134"
     },
     {
       "id": "0.42344722339894103",
@@ -90,7 +90,7 @@
       "user_id": "d6fe",
       "name": "Daler",
       "currency": "BAM",
-      "balance": "12345"
+      "balance": "1011"
     },
     {
       "id": "0.03519893867629764",
@@ -180,7 +180,7 @@
       "user_id": "1d4d",
       "name": "figoo",
       "currency": "AMD",
-      "balance": "4444444"
+      "balance": "4441445"
     },
     {
       "id": "0.30000351599848574",
@@ -198,7 +198,7 @@
       "user_id": "1d4d",
       "name": "rubleeees",
       "currency": "RUB",
-      "balance": "1000000"
+      "balance": "999223"
     },
     {
       "id": "0.9762308473939847",
@@ -310,6 +310,39 @@
     }
   ],
   "transactions": [
-    
+    {
+      "id": "e26d",
+      "created_at": "20240307, 17:21",
+      "updated_at": "17:21:25",
+      "user_id": "d6fe",
+      "wallet": {
+        "created_at": "02.03.2024",
+        "updated_at": "02.03.2024",
+        "name": "Daler",
+        "currency": "BAM",
+        "balance": "1011"
+      },
+      "total": "100",
+      "category": "car",
+      "description": "ferrari",
+      "wallet_id": "0.7682254708077147"
+    },
+    {
+      "id": "0659",
+      "created_at": "20240307, 17:23",
+      "updated_at": "17:23:33",
+      "user_id": "d6fe",
+      "wallet": {
+        "created_at": "02.03.2024",
+        "updated_at": "02.03.2024",
+        "name": "Daler",
+        "currency": "USD",
+        "balance": "1134"
+      },
+      "total": "100",
+      "category": "car",
+      "description": "ferrari",
+      "wallet_id": "0.4400490557438985"
+    }
   ]
 }

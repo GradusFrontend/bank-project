@@ -1,4 +1,4 @@
-
+import  moment  from 'moment';
 function getRGB() {
     function randomize() {
         return Math.floor(Math.random() * 255)
@@ -31,8 +31,8 @@ export function reload(arr, place) {
 export function reloadTransactions(arr, place) {
     place.innerHTML = ''
 
-
     for(let item of arr) {
+    for(let item of tempArr.reverse()) {
         let tr = document.createElement('tr')
         let idView = document.createElement('td')
         let walletView = document.createElement('td')
@@ -48,6 +48,11 @@ export function reloadTransactions(arr, place) {
         categoryView.innerHTML = item.category
         sumView.innerHTML = item.total
         daysAgoView.innerHTML = item.created_at
+        walletView.innerHTML = item.wallet.name
+        categoryView.innerHTML = item.category
+        sumView.innerHTML = item.total
+        console.log(item.created_at);
+        daysAgoView.innerHTML = moment(item.created_at, "YYYYMMDD, h:mm").fromNow()
     }
 }
 

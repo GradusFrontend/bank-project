@@ -1,10 +1,14 @@
-
 import { createHeader, reload } from "./modules/ui"
 import { getData } from "./modules/http"
+import moment from "moment"
+import { getData } from "./modules/http"
+import { createHeader, reload, reloadTransactions} from "./modules/ui"
 let user = JSON.parse(localStorage.getItem('user'))
 
 let body = document.querySelector('.header')
+const tbody = document.querySelector('#latest_transactions_tbody')
 createHeader(body)
+
 
 let user_view = document.querySelector('#user')
 let email_view = document.querySelector('.email')
@@ -35,8 +39,14 @@ pocket.onclick = () => {
 
 
 getData('/wallets?user_id=' + user.id)
-    .then(res => {
-        if (res.status === 200 || res.status === 201) {
-            reload(res.data.slice(0, 4), rel);
-        }
-    })
+.then(res => {
+    if (res.status === 200 || res.status === 201) {
+        reload(res.data.slice(0, 4), rel);
+    }
+})
+getData('/transactions?user_id=' + user.id)
+.then(res => {
+    if (res.status === 200 || res.status === 201) {
+        reloadTransactions(res.data, tbody, 'small');
+    }
+})
