@@ -47,3 +47,13 @@ export const getSymbols = async () => {
         toaster(e.message)
     }
 }
+
+export const patch = async (path, body) => {
+    try {
+       const res = await axios.patch(baseURL + path, body)
+
+       return res
+    } catch(e) {
+       toaster(e.message, 'error')
+    }
+}

@@ -1,5 +1,4 @@
 import { getSymbols, postData } from "../../modules/http"
-import { toaster_green } from "../../modules/ui";
 
 const form = document.forms.add_cardForm
 const select = form.querySelector('select')
@@ -35,7 +34,6 @@ form.onsubmit = (e) => {
         postData('/wallets', wallet)
             .then(res => {
                 if(res.status === 200 || res.status === 201) {
-                    toaster_green("Success")
                     location.assign('/pages/wallets/')
                 }
             })

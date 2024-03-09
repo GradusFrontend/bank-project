@@ -1,4 +1,4 @@
-let user = JSON.parse(localStorage.getItem('user'))
+import moment from 'moment'
 
 function getRGB() {
     function randomize() {
@@ -36,7 +36,7 @@ export function reloadTransactions(arr, place, size) {
     if (size === 'small') tempArr = arr.slice(0, 7)
     else if (size === 'full') tempArr = arr
 
-    for(let item of tempArr) {
+    for(let item of tempArr.reverse()) {
         let tr = document.createElement('tr')
         let idView = document.createElement('td')
         let walletView = document.createElement('td')
@@ -48,10 +48,11 @@ export function reloadTransactions(arr, place, size) {
         tr.append(idView, walletView, categoryView, sumView, daysAgoView)
 
         idView.innerHTML = item.id
-        walletView.innerHTML = item.wallet
+        walletView.innerHTML = item.wallet.name
         categoryView.innerHTML = item.category
         sumView.innerHTML = item.total
-        daysAgoView.innerHTML = item.created_at + ' дней назад'
+        console.log(item.created_at);
+        daysAgoView.innerHTML = moment(item.created_at, "YYYYMMDD, h:mm").fromNow()
     }
 }
 
@@ -90,11 +91,13 @@ export function createHeader() {
     glavnaya.innerHTML = 'Главная'
     koshelek.innerHTML = 'Мои кошельки'
     akcii.innerHTML = "Мои транзакции"
-    email.innerHTML = `${user.email}`
+    email.innerHTML = 'alexadams@google.com'
     icon.src = "../../public/log-out (1) 1.png"
+    icon.style.cursor = 'pointer'
 
     icon.onclick = () => {
-        location.assign("/signin/")
+        localStorage.removeItem('user')
+        location.assign('/pages/signin/')
     }
 
     return header
@@ -105,19 +108,6 @@ export function toaster(text) {
     const custom_alert = document.createElement('div')
 
         custom_alert.classList.add('error')
-        custom_alert.innerHTML = text
-
-        document.body.append(custom_alert)
-
-        setTimeout(() => {
-            custom_alert.remove()
-        }, 3000)
-}
-
-export function toaster_green(text) {
-    const custom_alert = document.createElement('div')
-
-        custom_alert.classList.add('success')
         custom_alert.innerHTML = text
 
         document.body.append(custom_alert)
