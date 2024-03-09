@@ -31,7 +31,7 @@ export function reload(arr, place) {
 export function reloadTransactions(arr, place) {
     place.innerHTML = ''
 
-    for(let item of tempArr.reverse()) {
+    for(let item of arr.reverse()) {
         let tr = document.createElement('tr')
         let idView = document.createElement('td')
         let walletView = document.createElement('td')

@@ -297,7 +297,7 @@
       "user_id": "583f",
       "name": "Sardor",
       "currency": "USD",
-      "balance": "122656"
+      "balance": "1678854952340"
     },
     {
       "id": "0.455361222041196",
@@ -343,6 +343,40 @@
       "category": "car",
       "description": "ferrari",
       "wallet_id": "0.4400490557438985"
+    },
+    {
+      "id": "772a",
+      "created_at": "20240309, 10:21",
+      "updated_at": "10:21:56",
+      "user_id": "583f",
+      "total": "12344",
+      "category": "Shopping",
+      "description": "Tomorrow ",
+      "wallet_id": "0.3850671850098002",
+      "wallet": {
+        "created_at": "07.03.2024",
+        "updated_at": "07.03.2024",
+        "name": "Sardor",
+        "currency": "USD",
+        "balance": 110312
+      }
+    },
+    {
+      "id": "7a47",
+      "created_at": "20240309, 10:24",
+      "updated_at": "10:24:11",
+      "user_id": "583f",
+      "total": "110312",
+      "category": "Shopping",
+      "description": "Tomorrow ",
+      "wallet_id": "0.3850671850098002",
+      "wallet": {
+        "created_at": "07.03.2024",
+        "updated_at": "07.03.2024",
+        "name": "Sardor",
+        "currency": "USD",
+        "balance": 0
+      }
     }
   ]
 }

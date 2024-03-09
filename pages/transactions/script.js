@@ -10,5 +10,5 @@ reloadTransactions( fg.data, tbody)
 
 getData('/transactions?user_id=' + user.id)
     .then(res => {
-        reloadTransactions(res.data, tbody, 'full')
+        reloadTransactions(res.data, tbody)
     })
