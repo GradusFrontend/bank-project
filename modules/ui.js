@@ -25,6 +25,10 @@ export function reload(arr, place) {
 
         div_1.append(h3, p)
         place.append(div_1)
+
+        div_1.onclick = () => {
+            location.assign('/pages/about_card/?id=' + item.id)
+        }
     }
 }
 
@@ -66,6 +70,7 @@ export function createHeader() {
     let email = document.createElement('a')
     let icon = document.createElement('img')
 
+
     email.classList.add("user_mail")
     box.classList.add('box')
     box_l.classList.add('box_l')
@@ -85,7 +90,6 @@ export function createHeader() {
     glavnaya.href = "/"
     koshelek.href = "/pages/wallets/"
     akcii.href = "/pages/transactions/"
-
 
     glavnaya.innerHTML = 'Главная'
     koshelek.innerHTML = 'Мои кошельки'

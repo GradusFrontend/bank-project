@@ -196,6 +196,15 @@
       "name": "sdasdasd",
       "currency": "AED",
       "balance": "333"
+    },
+    {
+      "id": 0.9721112117546657,
+      "created_at": "09.03.2024",
+      "updated_at": "09.03.2024",
+      "user_id": "87b9",
+      "name": "Jamik's",
+      "currency": "AED",
+      "balance": "1222222"
     }
   ],
   "transactions": [
