@@ -1,5 +1,6 @@
 import { getData, getSymbols } from "../../modules/http";
 import { createHeader, getRGB, reload } from "../../modules/ui";
+import vanilla_tilt from 'vanilla-tilt'
 createHeader()
 const user = JSON.parse(localStorage.getItem('user'))
 let recent_card = JSON.parse(localStorage.getItem('recent_card'))
@@ -23,6 +24,14 @@ getData('/wallets?id=' + recent_card.id)
         card.onclick = null
         card.style.width = '400px'
         card.style.height = '250px'
+        VanillaTilt.init(card), {
+            reverse: false,
+            max: 55,
+            speed: 300,
+            glare: true,
+            maxGlare: .5,
+            scale: 1.2,
+        }
     }
 })
 let opt = document.querySelector('#one')
