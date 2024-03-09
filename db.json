@@ -117,7 +117,7 @@
       "user_id": "583f",
       "name": "Visa",
       "currency": "BOB",
-      "balance": "100000000000000000000000"
+      "balance": "1e+23"
     },
     {
       "id": "0.27156518348976566",
@@ -297,7 +297,16 @@
       "user_id": "583f",
       "name": "Sardor",
       "currency": "USD",
-      "balance": "123456"
+      "balance": "122656"
+    },
+    {
+      "id": "0.455361222041196",
+      "created_at": "09.03.2024",
+      "updated_at": "09.03.2024",
+      "user_id": "583f",
+      "name": "Sardor2",
+      "currency": "USD",
+      "balance": "1234567881"
     }
   ],
   "transactions": [

@@ -10,7 +10,6 @@ let user_view = document.querySelector('#user')
 let email_view = document.querySelector('.email')
 let emailHeader_view = document.querySelector('.user_mail')
 let rel = document.querySelector('.reload')
-
 let place_for_reload = document.querySelector('.reload')
 getData('/wallets?user_id=' + user.id)
     .then(res => {
