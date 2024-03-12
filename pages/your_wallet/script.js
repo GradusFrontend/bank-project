@@ -1,4 +1,4 @@
-import {getData, getSymbols} from "../../modules/http";
+import {getData, getSymbols, patch} from "../../modules/http";
 import {createHeader, getRGB, reload} from "../../modules/ui";
 import vanilla_tilt from 'vanilla-tilt'
 createHeader()
@@ -47,4 +47,13 @@ getData('/wallets?id=' + recent_card.id).then(res => {
     const form_2 = document.forms.clarify
     form_2.onsubmit = (e) => {
         e.preventDefault()
+    } 
+    let money = document.querySelector('#money')
+    let currency = document.querySelector('#currency')
+    money.innerHTML = recent_card.balance
+    currency.innerHTML = recent_card.currency
+    selection.onchange = (e) => {
+        let val = e.target.value
+       const res =  import.meta.env.VITE_CHANCHING_URL + "to=" + val +'&' + 'from='+ recent_card.currency +'&' +"amount=" + recent_card.balance
+        console.log(CHANCHING_URL);
     }
