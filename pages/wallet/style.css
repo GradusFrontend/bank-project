@@ -148,9 +148,9 @@ body {
 }
 
 .graph {
+    width: 100%;
     margin-top: 70px;
     background-color: #fff;
     border-radius: 10px;
-    width: 100%;
-    padding: 30px;
+    padding: 20px;
 }
