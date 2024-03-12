@@ -13,6 +13,7 @@ export const getData = async (path) => {
         toaster(e.message)
     }
 }
+
 export const postData = async (path, body) => {
     try {
         const res = await axios.post(baseURL + path, body)
@@ -22,7 +23,6 @@ export const postData = async (path, body) => {
         toaster(e.message)
     }
 }
-
 
 export const getSymbols = async () => {
     const symbols = JSON.parse(localStorage.getItem('symbols'))

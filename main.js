@@ -1,4 +1,4 @@
-import { createHeader, reload } from "./modules/ui"
+import { createHeader, reload, reloadTransactions } from "./modules/ui"
 import { getData } from "./modules/http"
 let user = JSON.parse(localStorage.getItem('user'))
 
@@ -7,6 +7,7 @@ let user_view = document.querySelector('#user')
 let email_view = document.querySelector('.email')
 let rel = document.querySelector('.reload')
 let view_more = document.querySelector('.pocket')
+let tbody = document.getElementById("latest_transactions_tbody")
 
 createHeader(body)
 
@@ -27,4 +28,9 @@ getData('/wallets?user_id=' + user.id)
                 }
             }
         }
+    })
+
+getData('/transactions?user_id=' + user.id)
+    .then(res => {
+        reloadTransactions(res.data, tbody, 'small')
     })

@@ -1,4 +1,6 @@
 import moment from 'moment'
+import { getData } from './http'
+let user = JSON.parse(localStorage.getItem('user'))
 
 function getRGB() {
     function randomize() {
@@ -17,15 +19,23 @@ export function reload(arr, place) {
     for (const item of arr) {
         let div_1 = document.createElement('div')
         let h3 = document.createElement('h3')
+        let balance = document.createElement('p')
         let p = document.createElement('p')
 
         div_1.classList.add('card_visa')
         div_1.style.background = `linear-gradient(60deg, ${getRGB()}, ${getRGB()}, ${getRGB()})`
+        balance.classList.add('balance')
+        p.classList.add('curr')
         h3.innerHTML = item.name
+        balance.innerHTML = "Баланс" + ":" + " " + item.balance
         p.innerHTML = item.currency
 
-        div_1.append(h3, p)
+        div_1.append(h3, balance, p)
         place.append(div_1)
+
+        div_1.onclick = () => {
+            location.assign("../../pages/wallet?id=" + div_1.id)
+        }
     }
 }
 
@@ -91,7 +101,7 @@ export function createHeader() {
     glavnaya.innerHTML = 'Главная'
     koshelek.innerHTML = 'Мои кошельки'
     akcii.innerHTML = "Мои транзакции"
-    email.innerHTML = 'alexadams@google.com'
+    email.innerHTML = `${user.email}`
     icon.src = "../../public/log-out (1) 1.png"
     icon.style.cursor = 'pointer'
 
@@ -104,15 +114,20 @@ export function createHeader() {
 }
 
 
-export function toaster(text) {
+export function toaster(text, type) {
     const custom_alert = document.createElement('div')
+    const time_bar = document.createElement('div')
 
-        custom_alert.classList.add('error')
+        custom_alert.classList.add('toaster', `toaster_${type}`)
+        custom_alert.classList.add('toaster-anim')
+        time_bar.classList.add('time_bar')
         custom_alert.innerHTML = text
+
+        custom_alert.append(time_bar)
 
         document.body.append(custom_alert)
 
         setTimeout(() => {
             custom_alert.remove()
-        }, 3000)
+        }, 5000)
 }

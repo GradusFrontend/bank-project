@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/style.scss">
+</head>
+
+<body>
+
+    <!-- <div class="wrap">
+        <div class="card">
+            <div class="front">
+                <div class="wallet">
+                    <img src="" alt="">
+                    <h1>name</h1>
+                </div>
+                <h1>balance</h1>
+            </div>
+            <div class="back">
+                <h1>name</h1>
+                <h2>curr</h2>
+            </div>
+        </div>
+        <div class="convert">
+            <h1>Конвертировать в:</h1>
+
+            <form name="convert" id="convert">
+                <select name="currency"></select>
+                <button>Конвертировать</button>
+            </form>
+        </div>
+    </div> -->
+
+
+    <div class="wrap">
+        <div class="info">
+            <div data-tilt data-tilt-max="20" data-tilt-speed="50" data-tilt-perspective="500" class="card">
+                <div class="front view">
+                    <div class="wallet">
+                        <img src="../../public/wallet.png" alt="wallet">
+                        <h2></h2>
+                    </div>
+                    <h1></h1>
+                </div>
+                <div class="back view">
+                    <h2></h2>
+                    <h1></h1>
+                </div>
+            </div>
+
+            <div class="convert">
+                <h1>Конвертировать в:</h1>
+
+                <form name="convert">
+                    <select name="curr"></select>
+                    <button>Конвертировать</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="graph">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: [],
+            datasets: [{
+              label: '# of Votes',
+              data: [],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+    <!-- <script src="vanilla-tilt.js"></script> -->
+</body>
+
+</html>

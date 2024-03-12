@@ -5,9 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.scss">
-    <link rel="stylesheet" href="./style.css">
     <script defer src="/modules/guardian.js"></script>
     <title>Document</title>
+    <style>
+        button {
+            margin-top: 20px;
+            width: 200px;
+            height: 56px;
+            border: 0;
+            border-radius: 8px;
+            background-color: #0047FF;
+            padding-block: 10px;
+            color: #fff;
+            font-size: 17px;
+            cursor: pointer;
+            transition: .3s ease;
+        }
+
+        button:hover {
+            scale: 1.03;
+            background-color: #0134b5;
+        }
+
+        button:active {
+            scale: 1;
+            background-color: #0047FF;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,6 +62,9 @@
             </table>
 
         </div>
+        <button>
+        <a href="../add_transaction/">Добавить транзакцию</a>
+        </button>
     </div>
 
     <script type="module" src="./script.js"></script>

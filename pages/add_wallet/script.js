@@ -38,7 +38,5 @@ form.onsubmit = (e) => {
                 }
             })
     }
-
-    
 }
 

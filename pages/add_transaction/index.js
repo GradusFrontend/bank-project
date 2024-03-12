@@ -1,6 +1,5 @@
 import moment from "moment";
-import { getData, postData } from "../../modules/http";
-import { patch } from "../../modules/http";
+import { getData, postData, patch} from "../../modules/http";
 import { toaster } from "../../modules/ui";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -36,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const val = e.target.value
 
         if (+val > +selected_wallet.balance) {
-            e.target.classList.add('error_input')
+            e.target.classList.add('error')
         } else {
-            e.target.classList.remove('error_input')
+            e.target.classList.remove('error')
         }
 
     }
@@ -55,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
         formData.forEach((val, key) => transaction[key] = val)
 
-        if (total_inp.value > 0 && !total_inp.classList.contains('error_input')) {
+        if (total_inp.value > 0 && !total_inp.classList.contains('error')) {
             selected_wallet.balance = +selected_wallet.balance - +total_inp.value
 
             transaction.wallet_id = selected_wallet.id 

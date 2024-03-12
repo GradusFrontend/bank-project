@@ -58,22 +58,13 @@
       "balance": "12345"
     },
     {
-      "id": "0.7753565615896565",
-      "created_at": "04.03.2024",
-      "updated_at": "04.03.2024",
-      "user_id": "4254",
-      "name": "dilrukh",
-      "currency": "USD",
-      "balance": "6000"
-    },
-    {
       "id": "0.7157764106076603",
       "created_at": "05.03.2024",
       "updated_at": "05.03.2024",
       "user_id": "4254",
       "name": "visa",
       "currency": "AED",
-      "balance": "3000"
+      "balance": 0
     },
     {
       "id": "0.2721515421334284",
@@ -82,36 +73,146 @@
       "user_id": "4254",
       "name": "dilrukh",
       "currency": "BGN",
-      "balance": "9000"
+      "balance": 8000
     },
     {
-      "id": "0.03724362667973402",
-      "created_at": "05.03.2024",
-      "updated_at": "05.03.2024",
+      "id": "0.6533441627227712",
+      "created_at": "12.03.2024",
+      "updated_at": "12.03.2024",
       "user_id": "4254",
-      "name": "dilrukh",
-      "currency": "AED",
-      "balance": "555"
+      "name": "anor",
+      "currency": "UZS",
+      "balance": 4500
+    },
+    {
+      "id": "0.6440539875677389",
+      "created_at": "12.03.2024",
+      "updated_at": "12.03.2024",
+      "user_id": "4254",
+      "name": "mastercard",
+      "currency": "UZS",
+      "balance": "20000"
     }
   ],
   "transactions": [
     {
-      "id": 0.7484224531921329,
-      "wallet": "0.03724362667973402",
+      "id": "c79a",
+      "created_at": "20240312, 10:6",
+      "updated_at": "10:06:18",
+      "user_id": "4254",
+      "wallet": {
+        "created_at": "05.03.2024",
+        "updated_at": "05.03.2024",
+        "name": "visa",
+        "currency": "AED",
+        "balance": 1000
+      },
+      "total": "2000",
       "category": "jdsfn",
       "description": "ewjofwe",
-      "total": "122",
-      "created_at": "07.03.2024",
-      "updated_at": "07.03.2024"
+      "wallet_id": "0.7157764106076603"
     },
     {
-      "id": 0.6239616894861211,
-      "wallet": "0.2721515421334284",
+      "id": "c225",
+      "created_at": "20240312, 10:7",
+      "updated_at": "10:07:32",
+      "user_id": "4254",
+      "wallet": {
+        "created_at": "04.03.2024",
+        "updated_at": "04.03.2024",
+        "name": "dilrukh",
+        "currency": "USD",
+        "balance": 5900
+      },
+      "total": "100",
       "category": "jdsfn",
       "description": "ewjofwe",
-      "total": "122",
-      "created_at": "07.03.2024",
-      "updated_at": "07.03.2024"
+      "wallet_id": "0.7753565615896565"
+    },
+    {
+      "id": "83a0",
+      "created_at": "20240312, 10:14",
+      "updated_at": "10:14:23",
+      "user_id": "4254",
+      "wallet": {
+        "created_at": "05.03.2024",
+        "updated_at": "05.03.2024",
+        "name": "dilrukh",
+        "currency": "BGN",
+        "balance": 8000
+      },
+      "total": "1000",
+      "category": "car",
+      "description": "buy",
+      "wallet_id": "0.2721515421334284"
+    },
+    {
+      "id": "3717",
+      "created_at": "20240312, 10:29",
+      "updated_at": "10:29:58",
+      "user_id": "4254",
+      "wallet": {
+        "created_at": "04.03.2024",
+        "updated_at": "04.03.2024",
+        "name": "dilrukh",
+        "currency": "USD",
+        "balance": 4900
+      },
+      "total": "1000",
+      "category": "jdsfn",
+      "description": "sbf",
+      "wallet_id": "0.7753565615896565"
+    },
+    {
+      "id": "3de1",
+      "created_at": "20240312, 10:47",
+      "updated_at": "10:47:21",
+      "user_id": "4254",
+      "wallet": {
+        "created_at": "04.03.2024",
+        "updated_at": "04.03.2024",
+        "name": "dilrukh",
+        "currency": "USD",
+        "balance": 4400
+      },
+      "total": "500",
+      "category": "car",
+      "description": "buy",
+      "wallet_id": "0.7753565615896565"
+    },
+    {
+      "id": "32b6",
+      "created_at": "20240312, 10:50",
+      "updated_at": "10:50:29",
+      "user_id": "4254",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "anor",
+        "currency": "UZS",
+        "balance": 5000
+      },
+      "total": "5000",
+      "category": "car",
+      "description": "buy",
+      "wallet_id": "0.6533441627227712"
+    },
+    {
+      "id": "f768",
+      "created_at": "20240312, 11:30",
+      "updated_at": "11:30:42",
+      "user_id": "4254",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "anor",
+        "currency": "UZS",
+        "balance": 4500
+      },
+      "total": "500",
+      "category": "car",
+      "description": "buy",
+      "wallet_id": "0.6533441627227712"
     }
   ]
 }

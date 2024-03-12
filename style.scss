@@ -14,31 +14,18 @@ img {
 }
 
 .error {
-  width: 100%;
+  width: fit-content;
   text-align: center;
-  padding: 5px 10px;
+  padding: 15px 20px;
   font-size: medium;
-  border-radius: 12px;
-  background-color: rgb(246, 86, 86);
+  border-radius: 7px;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 30px;
+  right: 30px;
   transition: 1s ease;
   color: white;
-}
-
-.success {
-  width: 100%;
-  text-align: center;
-  padding: 5px 10px;
-  font-size: medium;
-  border-radius: 12px;
-  background-color: rgb(86, 246, 99);
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  transition: 1s ease;
-  color: white;
+  font-size: 24px;
+  font-family: Gilroy;
 }
 
 .wrap {
@@ -83,18 +70,22 @@ img {
       padding-block: 10px;
     }
 
-    td:nth-last-child(1), th:nth-last-child(1) {
+    td:nth-last-child(1),
+    th:nth-last-child(1) {
       text-align: right;
     }
 
-    td:nth-last-child(2), th:nth-last-child(2) {
+    td:nth-last-child(2),
+    th:nth-last-child(2) {
       text-align: center;
     }
-    td:nth-child(2), th:nth-child(2) {
+
+    td:nth-child(2),
+    th:nth-child(2) {
       text-align: center;
     }
   }
-  
+
   #all_transactions_link {
     font-weight: 600;
     margin-top: 20px;
@@ -103,106 +94,125 @@ img {
   }
 }
 
-img{
+img {
   max-width: 100%;
 }
-.wrap{
+
+.wrap {
   width: 1200px;
   margin: 30px auto;
 }
+
 .first {
-  h1{
-      font-size: 48px;
-      margin-bottom: 1%;
-      line-height: 59.42px;
+  h1 {
+    font-size: 48px;
+    margin-bottom: 1%;
+    line-height: 59.42px;
   }
-  .email{
-      cursor: pointer;
-      font-size: 18px;
+
+  .email {
+    cursor: pointer;
+    font-size: 18px;
+    color: #0047FF;
+    font-weight: 700;
+    line-height: 22.28px;
+  }
+
+  .cards {
+    margin-block: 70px;
+
+    h2 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29.11px;
+    }
+
+    .pocket {
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
       color: #0047FF;
-      font-weight: 700;
-      line-height: 22.28px;
-  }
-  .cards{
-      margin-block: 70px;
-      h2{
-          font-weight: 500;
-          font-size: 24px;
-          line-height: 29.11px;
-      }
-      .pocket{
-        margin-top: 25px;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #0047FF;
-        text-decoration: underline #0047FF;
-        cursor: pointer;
-      }
+      text-decoration: underline #0047FF;
+      cursor: pointer;
+    }
   }
 }
-.reload{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      .card_visa{
-          position: relative;
-          width: 282px;
-          height: 160px;
-          border-radius: 15px;
-          h3{
-              font-size: 24px;
-              font-weight: 500;
-              line-height: 29px;
-              color: white;
-              margin: 10px 20px;
-          }
-          p{
-              margin: 0 20px;
-              position: absolute;
-              bottom: 10px;
-              color: white;
-          }
-      }
+
+.reload {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  .card_visa {
+    position: relative;
+    width: 282px;
+    height: 160px;
+    border-radius: 15px;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      color: white;
+      margin: 10px 20px;
+    }
+
+    .curr {
+      right: 20px;
+      position: absolute;
+      bottom: 10px;
+      color: white;
+    }
+
+    .balance {
+      margin: 0 20px;
+      position: absolute;
+      bottom: 10px;
+      color: white;
+    }
   }
-header{
+}
+
+header {
   img {
-      width: 20%;
-      height: 20%;
+    width: 20%;
+    height: 20%;
   }
-  
-  
+
+
   a {
-      color: black;
+    color: black;
   }
-  
+
   .box {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      height: 70px;
-      background-color: #F0F0F0;
-      align-items: center;
-     
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    background-color: #F0F0F0;
+    align-items: center;
+
   }
-  
-  
+
+
   .btn {
-      color: red;
-      width: 50%;
-      height: 50%;
-      border: none;
-      cursor: pointer;
+    color: red;
+    width: 50%;
+    height: 50%;
+    border: none;
+    cursor: pointer;
   }
-  
+
   .box_l {
-      display: flex;
-      gap: 30px;
+    display: flex;
+    gap: 30px;
   }
+
   .box_r {
-      display: flex;
-      gap: 20px;
+    display: flex;
+    gap: 20px;
   }
 }
