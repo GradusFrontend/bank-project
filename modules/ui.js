@@ -11,7 +11,7 @@ function getRGB() {
     return `rgb(${r}, ${g}, ${b})`
 }
 export function reload(arr, place) {
-    place.innerHTML = ''
+    // place.innerHTML = ''
 
     for (const item of arr) {
         let div_1 = document.createElement('div')
@@ -25,6 +25,9 @@ export function reload(arr, place) {
 
         div_1.append(h3, p)
         place.append(div_1)
+        div_1.onclick = () => {
+            location.assign('/pages/your_wallet/?id=' + item.id)
+        }
     }
 }
 
