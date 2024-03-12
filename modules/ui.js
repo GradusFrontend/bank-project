@@ -34,7 +34,7 @@ export function reload(arr, place) {
         place.append(div_1)
 
         div_1.onclick = () => {
-            location.assign("../../pages/wallet?id=" + div_1.id)
+            location.assign("../../pages/wallet/?id=" + item.id)
         }
     }
 }
