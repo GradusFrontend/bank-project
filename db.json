@@ -211,7 +211,7 @@
       "user_id": "adc9",
       "name": "Sardor",
       "currency": "USD",
-      "balance": "11999.999974"
+      "balance": 11819.999974
     },
     {
       "id": "0.3781367950987997",
@@ -229,7 +229,7 @@
       "user_id": "adc9",
       "name": "Visa",
       "currency": "USD",
-      "balance": 49461
+      "balance": 49126
     },
     {
       "id": "0.6091860277940435",
@@ -308,6 +308,91 @@
       "total": "450",
       "category": "T",
       "description": "jkjgjhkhk",
+      "wallet_id": "0.9071219815972495"
+    },
+    {
+      "id": "e536",
+      "created_at": "20240312, 16:55",
+      "updated_at": "16:55:44",
+      "user_id": "adc9",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "Visa",
+        "currency": "USD",
+        "balance": 49311
+      },
+      "total": "150",
+      "category": "Traveling ",
+      "description": "Tomorrow ",
+      "wallet_id": "0.9071219815972495"
+    },
+    {
+      "id": "1aa7",
+      "created_at": "20240312, 16:55",
+      "updated_at": "16:55:55",
+      "user_id": "adc9",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "Sardor",
+        "currency": "USD",
+        "balance": 11819.999974
+      },
+      "total": "180",
+      "category": "Traveling ",
+      "description": "Tomorrow ",
+      "wallet_id": "0.13371694744805795"
+    },
+    {
+      "id": "4b6f",
+      "created_at": "20240312, 16:56",
+      "updated_at": "16:56:32",
+      "user_id": "adc9",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "Visa",
+        "currency": "USD",
+        "balance": 49301
+      },
+      "total": "10",
+      "category": "Shopping",
+      "description": "Tomorrow ",
+      "wallet_id": "0.9071219815972495"
+    },
+    {
+      "id": "c9ab",
+      "created_at": "20240312, 16:57",
+      "updated_at": "16:57:02",
+      "user_id": "adc9",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "Visa",
+        "currency": "USD",
+        "balance": 49201
+      },
+      "total": "100",
+      "category": "Shopping",
+      "description": "Tomorrow ",
+      "wallet_id": "0.9071219815972495"
+    },
+    {
+      "id": "720c",
+      "created_at": "20240312, 16:57",
+      "updated_at": "16:57:37",
+      "user_id": "adc9",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "Visa",
+        "currency": "USD",
+        "balance": 49126
+      },
+      "total": "75",
+      "category": "Traveling ",
+      "description": "Mukhitdinov",
       "wallet_id": "0.9071219815972495"
     }
   ]

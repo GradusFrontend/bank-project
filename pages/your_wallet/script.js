@@ -66,26 +66,28 @@ form.onsubmit = (e) => {
         })
     })
 }
-let time = []
-let amount = []
+let time =  []
+let amount =  []
 getData('/transactions?wallet_id=' + wallet_id)
-      .then(res => {
+      .then(res =>  {
         res.data.filter(item =>  {
           time.push(item.created_at.split(',').at(0))
           amount.push(item.total)
-        })
+        });
+        createChart()
       })
-console.log(time);
-console.log(amount);
+      console.log(time);
+      console.log(amount);
 const ctx = document.getElementById('myChart');
 
-  new Chart(ctx, {
+function createChart() {
+  new Chart(ctx,  { 
     type: 'line',
     data: {
       labels: time, // time
       datasets: [{
         label: '# of Votes',
-        data: amount, // balance
+        data:  amount, // balance
         borderWidth: 1
       }]
     },
@@ -97,3 +99,4 @@ const ctx = document.getElementById('myChart');
       }
     }
   });
+}
