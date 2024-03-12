@@ -46,7 +46,7 @@
       "user_id": "d6fe",
       "name": "VISA",
       "currency": "UZS",
-      "balance": "100"
+      "balance": 15
     },
     {
       "id": "0.7682254708077147",
@@ -213,6 +213,74 @@
       "category": "car",
       "description": "buy",
       "wallet_id": "0.6533441627227712"
+    },
+    {
+      "id": "bdf5",
+      "created_at": "20240312, 16:46",
+      "updated_at": "4:46:34 PM",
+      "user_id": "d6fe",
+      "wallet": {
+        "created_at": "02.03.2024",
+        "updated_at": "02.03.2024",
+        "name": "VISA",
+        "currency": "UZS",
+        "balance": 80
+      },
+      "total": "20",
+      "category": "car",
+      "description": "hello world",
+      "wallet_id": "0.42344722339894103"
+    },
+    {
+      "id": "70f2",
+      "created_at": "20240312, 16:46",
+      "updated_at": "4:46:46 PM",
+      "user_id": "d6fe",
+      "wallet": {
+        "created_at": "02.03.2024",
+        "updated_at": "02.03.2024",
+        "name": "VISA",
+        "currency": "UZS",
+        "balance": 55
+      },
+      "total": "25",
+      "category": "car",
+      "description": "kkkk",
+      "wallet_id": "0.42344722339894103"
+    },
+    {
+      "id": "213e",
+      "created_at": "20240312, 16:46",
+      "updated_at": "4:46:55 PM",
+      "user_id": "d6fe",
+      "wallet": {
+        "created_at": "02.03.2024",
+        "updated_at": "02.03.2024",
+        "name": "VISA",
+        "currency": "UZS",
+        "balance": 45
+      },
+      "total": "10",
+      "category": "car",
+      "description": "hello world",
+      "wallet_id": "0.42344722339894103"
+    },
+    {
+      "id": "56ca",
+      "created_at": "20240312, 16:51",
+      "updated_at": "4:51:38 PM",
+      "user_id": "d6fe",
+      "wallet": {
+        "created_at": "02.03.2024",
+        "updated_at": "02.03.2024",
+        "name": "VISA",
+        "currency": "UZS",
+        "balance": 15
+      },
+      "total": "30",
+      "category": "Getting Started",
+      "description": "kkkk",
+      "wallet_id": "0.42344722339894103"
     }
   ]
 }

@@ -1,8 +1,9 @@
 import { createHeader, toaster } from "../../modules/ui";
 import { getData, getSymbols } from "../../modules/http"
-import VanillaTilt from "vanilla-tilt";
 import axios from "axios";
-import { Chart } from "chart.js";
+import { Chart, registerables} from 'chart.js';
+import moment from "moment";
+Chart.register(...registerables);
 
 let wall = location.search.split('=').at(-1)
 
@@ -60,35 +61,40 @@ converBtn.onclick = async () => {
 let first = []
 let second = []
 
-getData('/transactions/?wallet_id=' + wall)
+getData('/transactions?wallet_id=' + wall)
     .then(res => {
-        if(res.status === 200 && res.status === 201){
+        console.log(res);
+        if(res.status === 200 || res.status === 201){
             res.data.forEach(item => {
-                let dates = item.created_at
-                first.push(dates)
-                let totals = item.total
-                second.push(totals)
+
+                first.push(moment(item.created_at.split(',')[0]).format('MMM Do YY'))
+                second.push(item.total)
             });
+
+            createChart()
         }
     })
 
 const ctx = document.getElementById('myChart');
 
-new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: first,
-        datasets: [{
-            label: '# of Votes',
-            data: second,
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
+function createChart() {
+    console.log(first, second);
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: first,
+            datasets: [{
+                label: 'График Транзакций',
+                data: second,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
             }
         }
-    }
-});
+    });
+}
