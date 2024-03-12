@@ -35,3 +35,7 @@ form.onsubmit = (e) => {
             })
         }
     }
+    let signup = document.querySelector('.signup')
+    signup.onclick = () => {
+        location.assign('../signup/')
+    }

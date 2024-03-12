@@ -41,6 +41,13 @@
       "name": "damir",
       "surname": "dambitovich",
       "password": "1234"
+    },
+    {
+      "id": "adc9",
+      "email": "smukhitdinov471@gmail.com",
+      "name": "Sardor",
+      "surname": "Mukhitdinov ",
+      "password": "12345"
     }
   ],
   "wallets": [
@@ -196,6 +203,42 @@
       "name": "sdasdasd",
       "currency": "AED",
       "balance": "333"
+    },
+    {
+      "id": "0.13371694744805795",
+      "created_at": "12.03.2024",
+      "updated_at": "12.03.2024",
+      "user_id": "adc9",
+      "name": "Sardor",
+      "currency": "USD",
+      "balance": "11999.999974"
+    },
+    {
+      "id": "0.3781367950987997",
+      "created_at": "12.03.2024",
+      "updated_at": "12.03.2024",
+      "user_id": "adc9",
+      "name": "Visa",
+      "currency": "UZS",
+      "balance": "1234567898"
+    },
+    {
+      "id": "0.9071219815972495",
+      "created_at": "12.03.2024",
+      "updated_at": "12.03.2024",
+      "user_id": "adc9",
+      "name": "Visa",
+      "currency": "USD",
+      "balance": 49461
+    },
+    {
+      "id": "0.6091860277940435",
+      "created_at": "12.03.2024",
+      "updated_at": "12.03.2024",
+      "user_id": "adc9",
+      "name": "Sardor2",
+      "currency": "USD",
+      "balance": "1000000000000000000000000"
     }
   ],
   "transactions": [
@@ -209,7 +252,7 @@
         "updated_at": "02.03.2024",
         "name": "Daler",
         "currency": "BAM",
-        "balance": 1011
+        "balance": "1011"
       },
       "total": "100",
       "category": "car",
@@ -226,12 +269,46 @@
         "updated_at": "02.03.2024",
         "name": "Daler",
         "currency": "USD",
-        "balance": 1134
+        "balance": "1134"
       },
       "total": "100",
       "category": "car",
       "description": "ferrari",
       "wallet_id": "0.4400490557438985"
+    },
+    {
+      "id": "7396",
+      "created_at": "20240312, 13:52",
+      "updated_at": "13:52:21",
+      "user_id": "adc9",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "Visa",
+        "currency": "USD",
+        "balance": "49911"
+      },
+      "total": "89",
+      "category": "Shopping",
+      "description": "Tomorrow ",
+      "wallet_id": "0.9071219815972495"
+    },
+    {
+      "id": "43b5",
+      "created_at": "20240312, 14:47",
+      "updated_at": "14:47:32",
+      "user_id": "adc9",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "Visa",
+        "currency": "USD",
+        "balance": 49461
+      },
+      "total": "450",
+      "category": "T",
+      "description": "jkjgjhkhk",
+      "wallet_id": "0.9071219815972495"
     }
   ]
 }

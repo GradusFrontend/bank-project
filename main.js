@@ -8,6 +8,7 @@ const tbody = document.querySelector('#latest_transactions_tbody')
 createHeader(body)
 
 
+
 let user_view = document.querySelector('#user')
 let email_view = document.querySelector('.email')
 let emailHeader_view = document.querySelector('.user_mail')
