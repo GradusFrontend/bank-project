@@ -66,3 +66,34 @@ form.onsubmit = (e) => {
         })
     })
 }
+let time = []
+let amount = []
+getData('/transactions?wallet_id=' + wallet_id)
+      .then(res => {
+        res.data.filter(item =>  {
+          time.push(item.created_at.split(',').at(0))
+          amount.push(item.total)
+        })
+      })
+console.log(time);
+console.log(amount);
+const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: time, // time
+      datasets: [{
+        label: '# of Votes',
+        data: amount, // balance
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });

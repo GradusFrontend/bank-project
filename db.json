@@ -211,7 +211,7 @@
       "user_id": "adc9",
       "name": "Sardor",
       "currency": "USD",
-      "balance": 11999.999974
+      "balance": "11999.999974"
     },
     {
       "id": "0.3781367950987997",
@@ -229,7 +229,7 @@
       "user_id": "adc9",
       "name": "Visa",
       "currency": "USD",
-      "balance": 49911
+      "balance": 49461
     },
     {
       "id": "0.6091860277940435",
@@ -252,7 +252,7 @@
         "updated_at": "02.03.2024",
         "name": "Daler",
         "currency": "BAM",
-        "balance": 1011
+        "balance": "1011"
       },
       "total": "100",
       "category": "car",
@@ -269,7 +269,7 @@
         "updated_at": "02.03.2024",
         "name": "Daler",
         "currency": "USD",
-        "balance": 1134
+        "balance": "1134"
       },
       "total": "100",
       "category": "car",
@@ -286,11 +286,28 @@
         "updated_at": "12.03.2024",
         "name": "Visa",
         "currency": "USD",
-        "balance": 49911
+        "balance": "49911"
       },
       "total": "89",
       "category": "Shopping",
       "description": "Tomorrow ",
+      "wallet_id": "0.9071219815972495"
+    },
+    {
+      "id": "43b5",
+      "created_at": "20240312, 14:47",
+      "updated_at": "14:47:32",
+      "user_id": "adc9",
+      "wallet": {
+        "created_at": "12.03.2024",
+        "updated_at": "12.03.2024",
+        "name": "Visa",
+        "currency": "USD",
+        "balance": 49461
+      },
+      "total": "450",
+      "category": "T",
+      "description": "jkjgjhkhk",
       "wallet_id": "0.9071219815972495"
     }
   ]
