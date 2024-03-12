@@ -89,11 +89,11 @@ export function createHeader() {
     koshelek.href = "/pages/wallets/"
     akcii.href = "/pages/transactions/"
 
-
+    const user = JSON.parse(localStorage.getItem('user'))
     glavnaya.innerHTML = 'Главная'
     koshelek.innerHTML = 'Мои кошельки'
     akcii.innerHTML = "Мои транзакции"
-    email.innerHTML = 'alexadams@google.com'
+    email.innerHTML = user.email
     icon.src = "../../public/log-out (1) 1.png"
     icon.style.cursor = 'pointer'
 
